@@ -1,0 +1,223 @@
+:root {
+    --black_1: #000000;
+    --black_2: #282325;
+    --black_3: #48525E;
+
+    --blue_1: #6574cd;
+
+    --yellow_1: #ffed4a;
+
+    --red_1: #e3342f;
+
+    --green_1: #38c172;
+
+    --white_1: #ffffff;
+    --white_2: #fefefe;
+    --white_3: #f7f7f7;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+
+.width.width-30 {
+    width: 30px;
+}
+
+.width.width-40 {
+    width: 40px;
+}
+
+.width.width-50 {
+    width: 50px;
+}
+
+.width.width-80 {
+    width: 80px;
+}
+
+.width.width-90 {
+    width: 90px;
+}
+
+.width.width-100 {
+    width: 100px;
+}
+
+.width.width-110 {
+    width: 110px;
+}
+
+.width.width-120 {
+    width: 120px;
+}
+
+.width.width-130 {
+    width: 130px;
+}
+
+.width.width-140 {
+    width: 140px;
+}
+
+.width.width-150 {
+    width: 150px;
+}
+
+.width.width-160 {
+    width: 160px;
+}
+
+.width.width-170 {
+    width: 170px;
+}
+
+.width.width-180 {
+    width: 180px;
+}
+
+.width.width-190 {
+    width: 190px;
+}
+
+.width.width-200 {
+    width: 200px;
+}
+
+.form-group small.form-text.error {
+    color: var(--red_1);
+}
+
+.form-group small.form-text.warn {
+    color: var(--yellow_1);
+}
+
+.form-group small.form-text.info {
+    color: var(--blue_1);
+}
+
+.form-group small.form-text.comment {
+    color: var(--black_3);
+}
+
+.background-color-black {
+    background-color: var(--black_2);
+    color: var(--white_2);
+}
+
+.background-color-white3 {
+    background-color: var(--white_3);
+    color: var(--black_2);
+}
+
+.display-flex-center{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.transition.transition-_5 {
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out;
+}
+
+.background-color-black3-hover:hover{
+    background-color: var(--black_3);
+}
+
+.background-color-rebeccapurple-hover:hover{
+    background-color: rebeccapurple;
+}
+
+.button{
+    cursor: pointer;
+}
+
+.button.button-black {
+    border: 1px solid var(--black_2);
+}
+
+.button.button-white3 {
+    background-color: var(--white_3);
+}
+
+.button.button-red {
+    background-color: var(--red_1);
+}
+
+.button.button-green {
+    background-color: var(--green_1);
+}
+
+.button.button-hover-black2:hover {
+    background-color: var(--black_2);
+}
+
+.button.button-hover-red:hover {
+    background-color: var(--red_1);
+}
+
+.button.button-hover-green:hover {
+    background-color: var(--green_1);
+}
+
+.button.button-hover-color-white3:hover,
+.btn.button-hover-color-white3:hover{
+    color: var(--white_3);
+}
+
+.color-black2{
+    color: var(--black_2);
+}
+
+.color-white3{
+    color: var(--white_3);
+}
+
+.color-green1{
+    color: var(--green_1);
+}
+
+.color-red1{
+    color: var(--red_1);
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+select.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(40, 35, 37, 0.8);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(40, 35, 37, 0.6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(40, 35, 37, 0.6);
+    outline: 0 none;
+}

@@ -1,0 +1,27 @@
+.FORM_LOGIN{
+    /* border: 1px solid var(--white_2);
+    padding: 10px;
+    border-radius: 5px; */
+    padding: 20px 20px;
+    width: 350px;
+    background: var(--white_3);
+    color: var(--black_2);
+}
+
+.FORM_LOGIN .title{
+    border-bottom: 1px solid var(--black_2);
+}
+
+.FORM_LOGIN .title p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.FORM_LOGIN input{
+    background-color: var(--white_1);
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: var(--black_2);
+    /* border: 1px solid var(--black_2); */
+}

@@ -1,0 +1,57 @@
+.LAYOUT_PAGE{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* background: red; */
+    height: 100%;
+}
+
+.LAYOUT_PAGE .LEFT{
+    width: 250px;
+    height: 100%;
+    background-color: var(--black_2);
+}
+
+.LAYOUT_PAGE .RIGHT{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white_3);
+    padding: 20px;
+}
+
+.LAYOUT_PAGE .RIGHT .card{
+    margin-bottom: 20px;
+}
+
+.sidebar-menu{
+    border-bottom: 1px solid var(--white_2);
+    /* background-color: blue; */
+    padding: 10px;
+}
+
+.sidebar-menu.active{
+    background-color: var(--white_3);
+}
+
+.sidebar-menu.active p{
+    color: var(--black_2);
+}
+
+.sidebar-menu:hover{
+    cursor: pointer;
+}
+
+.sidebar-menu p{
+    color: var(--white_2);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+}
+
+.body-content{
+    /* CODE HERE */
+}
+
+.body-content.flex-column{
+    
+}
