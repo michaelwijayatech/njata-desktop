@@ -1,5 +1,16 @@
 const electron = require('electron');
-const {app, BrowserWindow} = electron;
+const {app, BrowserWindow, ipcMain} = electron;
+
+global.globalVariable = {
+    // local_api_ip = '192.168.1.11/wijayatech/njata/webservice/public/api',
+    local_api_ip: 'http://192.168.1.8/wijayatech/njata/webservice/public/api/',
+
+    STATUS_SUCCESS: 200,
+    STATUS_ERROR: 404,
+    STATUS_EXIST: 201,
+
+    user_id: null
+};
 
 app.on('ready', () => {
     let win = new BrowserWindow({
@@ -8,6 +19,7 @@ app.on('ready', () => {
         minWidth: 800, 
         minHeight: 600,
     });
+    // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/index.html`);
 });
 
@@ -18,6 +30,6 @@ exports.openWindow = (filename) => {
         minWidth: 800, 
         minHeight: 600,
     });
-    // win.webContents.openDevTools();
+    win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
