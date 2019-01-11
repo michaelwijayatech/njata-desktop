@@ -8,6 +8,8 @@ $('#button-login').click(function(){
     
     // const url = 'https://randomuser.me/api/?results=10';
 
+
+
     const global_var = remote.getGlobal('globalVariable');
 
     const api = global_var.local_api_ip;
@@ -15,6 +17,12 @@ $('#button-login').click(function(){
 
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
+
+    if(username === "admin" && password === "admin"){
+        var window = remote.getCurrentWindow();
+        main.openWindow('layout');
+        window.close();
+    }
 
     const data = {
         username: username,

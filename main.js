@@ -13,12 +13,17 @@ global.globalVariable = {
     user_id: null
 };
 
+app.on('browser-window-created',function(e,window) {
+    window.setMenu(null);
+});
+
 app.on('ready', () => {
     let win = new BrowserWindow({
         width: 1024,
         height: 728,
         minWidth: 800, 
         minHeight: 600,
+        frame: false
     });
     // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/index.html`);
