@@ -1,12 +1,23 @@
 <div class="body-content flex-column">
     <div class="row">
         <div class="col-sm-12">
-            <h4>EMPLOYEE | ADD</h4>
+            <h4>EMPLOYEE | INFO</h4>
             <br>
         </div>
 
         <div class="col-sm-12">
             <form>
+                <div class="form-row display-none">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="input_id">ID *</label>
+                            <input type="text" class="form-control" id="input_id" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+
                 <div class="form-row">
                     <div class="col-sm-6">
                         <div class="form-group">
@@ -81,8 +92,8 @@
                         <div class="form-group">
                             <label for="input_gender">Gender</label>
                             <select class="form-control" id="input_gender">
-                                <option value="male">MALE</option>
-                                <option value="female">FEMALE</option>
+                                <option value="male" id="input-gender-1">MALE</option>
+                                <option value="female" id="input-gender-2">FEMALE</option>
                             </select>
                         </div>
                     </div>
@@ -99,9 +110,9 @@
                         <div class="form-group">
                             <label for="input_job">Status</label>
                             <select class="form-control" id="input_job">
-                                <option value="borongan">BORONGAN</option>
-                                <option value="harian_atas">HARIAN ATAS</option>
-                                <option value="harian_bawah">HARIAN BAWAH</option>
+                                <option value="borongan" id="input-status-2">BORONGAN</option>
+                                <option value="harian_atas" id="input-status-1">HARIAN ATAS</option>
+                                <option value="harian_bawah" id="input-status-3">HARIAN BAWAH</option>
                             </select>
                         </div>
                     </div>
@@ -115,8 +126,10 @@
 
                 <div class="col-sm-12">
                     <div class="float-right">
-                        <p id="menus-master" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3">CANCEL</p>
-                        <p id="contents-master-employee-add_images" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
+                        <p id="menus-master" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
+                        <p id="contents-master-employee-index" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3">CANCEL</p>
+                        <p id="contents-master-employee-info_images" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">TO IMAGES</p>
+                        <p id="resign" onclick="_employee_resign()" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3">RESIGN</p>
                         <p id="btn-save" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3">SAVE</p>
                     </div>
                 </div>

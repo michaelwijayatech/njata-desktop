@@ -1,6 +1,10 @@
 const remote = require('electron').remote;
 const main = remote.require('./main.js');
 
+$(document).ready(function () {
+    $('#username').focus();
+});
+
 $('#button-login').click(function(){
     // console.log(remote.getGlobal('sharedObj').user_id);  
     // remote.getGlobal('sharedObj').user_id = 'asd';

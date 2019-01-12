@@ -122,6 +122,10 @@ body {
     align-items: center;
 }
 
+.display-none{
+    display: none;
+}
+
 .justify-content-center {
     display: flex;
     justify-content: center;
