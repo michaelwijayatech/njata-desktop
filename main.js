@@ -3,8 +3,13 @@ const {app, BrowserWindow, ipcMain} = electron;
 
 global.globalVariable = {
     // local_api_ip = '192.168.1.11/wijayatech/njata/webservice/public/api',
+<<<<<<< HEAD
     local_api_ip: 'http://192.168.1.8/wijayatech/njata/webservice/public/api/',
     local_api_images: 'http://192.168.1.8/wijayatech/njata/webservice/public/images/employee/',
+=======
+    // local_api_ip: 'http://192.168.1.8/wijayatech/njata/webservice/public/api/',
+    local_api_ip: 'http://127.0.0.1/njata-webservice/public/api/',
+>>>>>>> e1c39168db4ad08a277228b2ef06a974b7a28a29
 
     STATUS_SUCCESS: 200,
     STATUS_ERROR: 404,
@@ -19,12 +24,17 @@ global.globalVariable = {
     temp_05: null, // Image BPJS Kesehatan Name
 };
 
+app.on('browser-window-created',function(e,window) {
+    window.setMenu(null);
+});
+
 app.on('ready', () => {
     let win = new BrowserWindow({
         width: 1024,
         height: 728,
         minWidth: 800, 
         minHeight: 600,
+        frame: false
     });
     // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/index.html`);
