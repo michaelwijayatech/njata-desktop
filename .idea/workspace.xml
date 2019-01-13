@@ -2,48 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c608750c-c791-4240-847c-30fa89f73290" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/assets/plugins/jquery.datepicker.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/plugins/jquery.datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/administrator/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/administrator/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/administrator/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/administrator/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/administrator/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/administrator/info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/company/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/company/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/company/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/company/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/company/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/company/info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/contact/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/contact/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/contact/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/contact/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/contact/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/contact/info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/standard/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/standard/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/standard/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/standard/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/standard/info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/standard/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/holiday/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/holiday/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/holiday/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/holiday/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/holiday/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/holiday/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/haid/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/haid/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/menus/transaction/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/add.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/add.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/pages/menus/master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/menus/master/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,38 +30,38 @@
           <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="4" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.6" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="6" />
-          <entry key="html" value="70" />
-          <entry key="js" value="88" />
+          <entry key="html" value="81" />
+          <entry key="js" value="98" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="70" />
+          <entry key="HTML" value="81" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="88" />
+          <entry key="JavaScript" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="68" />
-          <entry key="html" value="2518" />
-          <entry key="js" value="7307" />
+          <entry key="html" value="2790" />
+          <entry key="js" value="7618" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="69" />
-          <entry key="HTML" value="2518" />
-          <entry key="JavaScript" value="7306" />
+          <entry key="HTML" value="2790" />
+          <entry key="JavaScript" value="7617" />
         </counts>
       </usages-collector>
     </session>
@@ -98,46 +69,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/add.html">
+        <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="240">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/pages/menus/transaction/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/info.html">
+        <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="501">
+              <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.js">
+        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/add.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="277">
+              <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/info.js">
+        <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/add.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="307">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -145,44 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="95" column="46" lean-forward="true" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/menus/master/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="225">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -214,11 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/pages/menus/setting/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/setting/change_password/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/setting/change_password/index.js" />
-        <option value="$PROJECT_DIR$/resources/pages/sidebar/index.html" />
-        <option value="$PROJECT_DIR$/resources/assets/plugins/jquery.datepicker.full.min.js" />
         <option value="$PROJECT_DIR$/resources/assets/plugins/jquery.datepicker.min.css" />
         <option value="$PROJECT_DIR$/layout.html" />
         <option value="$PROJECT_DIR$/resources/css/global.css" />
@@ -250,17 +180,26 @@
         <option value="$PROJECT_DIR$/resources/pages/contents/master/administrator/info.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/contact/info.js" />
         <option value="$PROJECT_DIR$/layout.js" />
-        <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/contact/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/contact/add.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/contact/info.html" />
-        <option value="$PROJECT_DIR$/resources/pages/menus/master/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/index.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/add.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/add.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/info.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/info.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/menus/master/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/holiday/index.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/holiday/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/holiday/add.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/holiday/add.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/holiday/info.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/holiday/info.html" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/menus/transaction/index.html" />
       </list>
     </option>
   </component>
@@ -290,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,7 +269,7 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
               <item name="master" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
+              <item name="holiday" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
@@ -339,8 +277,16 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="master" type="462c0819:PsiDirectoryNode" />
-              <item name="standard" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="contents" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="haid" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
@@ -356,6 +302,14 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="menus" type="462c0819:PsiDirectoryNode" />
               <item name="master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="menus" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
@@ -368,6 +322,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,6 +336,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/pages/contents/transaction/haid" />
+      <recent name="$PROJECT_DIR$/resources/pages/menus/transaction" />
+      <recent name="$PROJECT_DIR$/resources/pages/contents/master/holiday" />
       <recent name="$PROJECT_DIR$/resources/pages/contents/master/variable" />
       <recent name="$PROJECT_DIR$/resources/pages/contents/master/company" />
     </key>
@@ -414,17 +372,18 @@
       <workItem from="1543726789021" duration="12133000" />
       <workItem from="1544012976343" duration="9201000" />
       <workItem from="1544324583651" duration="14409000" />
+      <workItem from="1547359233895" duration="7054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63145000" />
+    <option name="totallyTimeSpent" value="70199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21316166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2160229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -439,7 +398,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.13161466" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19402985" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -453,60 +412,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/plugins/jquery.datepicker.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16432" selection-start-column="16432" selection-end-column="16432" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/setting/change_password/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/setting/change_password/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/menus/setting/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="168" selection-start-line="8" selection-start-column="168" selection-end-line="8" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/sidebar/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/template.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#97#109#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="76" column="10" lean-forward="true" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!block;n#_loadCompanyData#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -629,9 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="n#!!block;n#_loadCompanyData#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,9 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="n#!!block;n#_loadCompanyData#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,24 +593,10 @@
     <entry file="file://$PROJECT_DIR$/resources/pages/sidebar/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/sidebar/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="108" selection-start-line="19" selection-start-column="102" selection-end-line="19" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -735,48 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/menus/master/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="95" column="46" lean-forward="true" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -786,22 +630,141 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="420">
           <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/standard/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="360">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/menus/master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="77" lean-forward="true" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="982">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-743">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="48" column="35" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/sidebar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/menus/transaction/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
