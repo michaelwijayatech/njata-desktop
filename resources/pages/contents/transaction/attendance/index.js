@@ -23,7 +23,7 @@ function _loadData() {
     })
         .then((response) => response.json())
         .then((responseJson) => {
-            console.log(responseJson);
+            // console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
@@ -129,7 +129,8 @@ function _setAttendance(element, status, _api) {
         data = {
             table: "attendance",
             id_employee: id,
-            status: att_status
+            status: att_status,
+            date: ''
         };
     }
 
@@ -196,14 +197,33 @@ function _setCutiHaid(element) {
         });
 }
 
-function _filterTable() {
+function _filterTableByName() {
     var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("table-search-input");
+    input = document.getElementById("table-search-input-by-name");
     filter = input.value.toUpperCase();
     table = document.getElementById("table-body");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+
+function _filterTableByStatus() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("table-search-input-by-status");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("table-body");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
         if (td) {
             txtValue = td.textContent || td.innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {

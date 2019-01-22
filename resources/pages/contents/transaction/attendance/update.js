@@ -28,7 +28,7 @@ function _loadData() {
     })
         .then((response) => response.json())
         .then((responseJson) => {
-            console.log(responseJson);
+            // console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
@@ -73,9 +73,17 @@ function _searchAttendance() {
     const api = global_var.local_api_ip;
     const url = api + 'load_data';
 
+    const _emp_id = $('#employee_id').val();
+    const _date = $('#attendance_date').val();
+
+    global_var.temp_02 = _emp_id;
+    global_var.temp_03 = _date;
+
     const data = {
-        table: "employee",
-        id: "all"
+        table: "attendance",
+        id: "update_attendance",
+        id_employee: _emp_id,
+        date: _date
     };
 
     fetch(url, {
@@ -88,21 +96,97 @@ function _searchAttendance() {
     })
         .then((response) => response.json())
         .then((responseJson) => {
-            console.log(responseJson);
+            // console.log(responseJson);
+            $('.third-step').removeClass('display-none');
+            $("#attendance_button").html("");
+            if(responseJson.message === null){
+                $("#attendance_button").append(
+                    "<button id='new_masuk' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', 'add')\">MASUK</button>" +
+                    "<button id='new_setengah_hari' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', 'add')\">STGH HARI</button>" +
+                    "<button id='new_tidak_masuk' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', 'add')\">TDK MASUK</button>" +
+                    "<button id='new_ijin' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', 'add')\">IJIN</button>"
+                )
+            } else {
+                if (responseJson.message.status === "1") {
+                    $("#attendance_button").append(
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                    )
+                } else if (responseJson.message.status === "2") {
+                    $("#attendance_button").append(
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                    )
+                } else if (responseJson.message.status === "3") {
+                    $("#attendance_button").append(
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                    )
+                } else if (responseJson.message.status === "0") {
+                    $("#attendance_button").append(
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                    )
+                }
+            }
+
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}
+
+function _setAttendance(element, status, _api) {
+    var id = element.id;
+    var att_status = status;
+    var callback_api = _api;
+
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    var url = api + 'update_data';
+    var data = {
+        table: "attendance",
+        id_employee: id,
+        status: att_status,
+        id: _api
+    };
+    if (callback_api === "add"){
+        url = api + 'add_data';
+        data = {
+            table: "attendance",
+            id_employee: $('#employee_id').val(),
+            status: att_status,
+            date: $('#attendance_date').val()
+        };
+    }
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
-
+            //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
-                for(var i=0; i<responseJson.message.length; i++){
-                    $("#table-body").append(
-                        "<tr>" +
-                        "<td>"+responseJson.message[i].first_name+" "+responseJson.message[i].last_name+"</td>" +
-                        "<td>"+responseJson.message[i].status+"</td>" +
-                        "<td id='"+responseJson.message[i].id+"@!#"+responseJson.message[i].first_name+" "+responseJson.message[i].last_name+"' onclick=\"_setChooseEmployee(this)\" class=\"text-center width width-80 color-green1 cursor-pointer\">Choose</td>" +
-                        "</tr>"
-                    )
-                }
+                //     alert(responseJson.message);
+                $('#btn_search_attendance').click();
             }
         })
         .catch((error) => {
