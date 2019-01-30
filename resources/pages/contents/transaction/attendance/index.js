@@ -1,5 +1,6 @@
 $(document).ready(function () {
     _loadData();
+    _calcTableHeight();
 });
 
 function _loadData() {
@@ -102,11 +103,23 @@ function _loadData() {
                         )
                     }
                 }
+
+                _setFilter();
             }
         })
         .catch((error) => {
             alert('Error : ' + error);
         });
+}
+
+function _setFilter() {
+    const global_var = remote.getGlobal('globalVariable');
+
+    if (global_var.filter !== null) {
+        $('#table-search-input-by-status').val(global_var.filter);
+        // await _filterTableByStatus();
+        $('#table-search-input-by-status').keyup();
+    }
 }
 
 function _setAttendance(element, status, _api) {
@@ -151,6 +164,9 @@ function _setAttendance(element, status, _api) {
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
                 //     alert(responseJson.message);
+                if($('#table-search-input-by-status').val() !== ""){
+                    global_var.filter = $('#table-search-input-by-status').val();
+                }
                 $('#contents-transaction-attendance-index').click();
             }
         })
@@ -216,7 +232,7 @@ function _filterTableByName() {
     }
 }
 
-function _filterTableByStatus() {
+async function _filterTableByStatus() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("table-search-input-by-status");
     filter = input.value.toUpperCase();

@@ -55,3 +55,8 @@
 .body-content.flex-column{
     
 }
+
+.scrollable-table{
+    height: 400px;
+    overflow: auto;
+}

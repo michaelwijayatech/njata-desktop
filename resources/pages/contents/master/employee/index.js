@@ -40,6 +40,8 @@ $(document).ready(function () {
         .catch((error) => {
             alert('Error : ' + error);
         });
+
+    _calcTableHeight();
 });
 
 function _filterTable() {

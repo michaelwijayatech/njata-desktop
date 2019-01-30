@@ -16,6 +16,10 @@ $(document).ready(async function () {
         $('#input_premi').val(_moneySeparator($('#input_premi').val()));
     });
 
+    $('#input_potongan_bpjs').keyup(function () {
+        $('#input_potongan_bpjs').val(_moneySeparator($('#input_potongan_bpjs').val()));
+    });
+
     await _loadCompanyData()
 
     await _loadEmployeeData();
@@ -94,6 +98,9 @@ async function _loadEmployeeData() {
                 if(responseJson.message.premi !== undefined || responseJson.message.premi !== "" || responseJson.message.premi !== null){
                     $('#input_premi').val(responseJson.message.premi);
                 }
+                if(responseJson.message.potongan_bpjs !== undefined || responseJson.message.potongan_bpjs !== "" || responseJson.message.potongan_bpjs !== null){
+                    $('#input_potongan_bpjs').val(responseJson.message.potongan_bpjs);
+                }
                 $('#input_dob').val(responseJson.message.dob);
                 $('#input_start_date').val(responseJson.message.start_date);
                 $('#input-gender-' + responseJson.message.gender).attr('selected', 'selected');
@@ -147,6 +154,7 @@ $('#btn-save').click(function () {
         phone_2: $('#input_phonenumber_2').val(),
         domicile_address: $('#input_address_domisili').val(),
         premi: $('#input_premi').val(),
+        potongan_bpjs: $('#input_potongan_bpjs').val(),
         dob: $('#input_dob').val(),
         start_date: $('#input_start_date').val(),
         gender: $('#input_gender').val(),

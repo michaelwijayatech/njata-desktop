@@ -99,6 +99,18 @@ function _moneySeparator(nStr) {
     return ( input === 0 ) ? "" : input.toLocaleString( ['ban', 'id'] );
 }
 
+function _moneySeparatorNoKeyCode(nStr) {
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + '.' + '$2');
+    }
+    return x1 + x2;
+}
+
 function _checkInput_isEmpty(id){
     var cek_input = $('#' + id).val();
     if(cek_input === "" || cek_input === null){
@@ -160,4 +172,10 @@ function _loadCompanyData(){
         .catch((error) => {
             alert('Error : ' + error);
         });
+}
+
+function _calcTableHeight() {
+    var window_height = window.innerHeight;
+    $('.scrollable-table').css('height', (window_height - 130) + "px");
+    $('.scrollable-table').css('overflow', 'auto');
 }

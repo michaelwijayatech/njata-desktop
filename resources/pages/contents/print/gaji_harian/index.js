@@ -24,5 +24,5 @@ function _calcGaji() {
         global_var.is_checked = false;
     }
 
-    $('#contents-print-gaji_borongan-result').click();
+    $('#contents-print-gaji_harian-result').click();
 }
