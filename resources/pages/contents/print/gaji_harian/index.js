@@ -8,6 +8,10 @@ $(document).ready(function () {
         format: 'd-m-Y',
         timepicker:false,
     });
+
+    if ($('.LAYOUT_PAGE .LEFT').css('display') === 'none'){
+        $('.LAYOUT_PAGE .LEFT').css('display', 'block');
+    }
 });
 
 function _calcGaji() {

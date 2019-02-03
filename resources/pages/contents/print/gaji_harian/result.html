@@ -35,9 +35,10 @@
                     <th class="text-center width">Premi</th>
                     <th class="text-center width">Haid</th>
                     <th class="text-center width">Potongan BPJS</th>
-                    <th class="text-center width">Total</th>
-                    <th class="text-center width width-50">Revisi</th>
-                    <th class="text-center width">Total</th>
+                    <th class="total-before text-center width">Total</th>
+                    <th class="total-revision text-center width width-50">Revisi</th>
+                    <th class="total-after text-center width">Total</th>
+                    <th class="name-helper display-none">Name</th>
                     <!--<th class="text-center width width-80">Info</th>-->
                 </tr>
                 </thead>
@@ -49,7 +50,8 @@
 
         <div class="col-sm-12">
             <button id="contents-print-gaji_harian-index" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right display-none" onclick="_setActiveSidebar(this)">CANCEL</button>
-            <button class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_saveGaji()">NEXT</button>
+            <button id="btn-next" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_saveGaji()">NEXT</button>
+            <button id="btn-print" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right display-none" onclick="_printToPDF()">PRINT</button>
         </div>
 
 

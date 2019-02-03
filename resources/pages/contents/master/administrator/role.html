@@ -1,0 +1,56 @@
+<div class="body-content flex-column">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>ADMINISTRATOR | ROLE</h4>
+            <br>
+        </div>
+
+        <div class="col-sm-12">
+            <form>
+                <div class="form-row display-none">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="input_id">ID *</label>
+                            <input type="text" class="form-control" id="input_id" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+
+
+                <h5 style="margin-top: 20px;">MASTER</h5>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="contents-master-standard-index" name="role"> Standard</label>
+                    <label><input type="checkbox" value="contents-master-holiday-index" name="role"> Holiday</label>
+                    <label><input type="checkbox" value="contents-master-company-index" name="role"> Company</label>
+                    <label><input type="checkbox" value="contents-master-administrator-index" name="role"> Administrator</label>
+                    <label><input type="checkbox" value="contents-master-employee-index" name="role"> Employee</label>
+                    <label><input type="checkbox" value="contents-master-contact-index" name="role"> Contact</label>
+                    <label><input type="checkbox" value="contents-master-group-index" name="role"> Group</label>
+                </div>
+
+                <h5 style="margin-top: 20px;">TRANSACTION</h5>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="contents-transaction-attendance-index" name="role"> Attendance</label>
+                    <label><input type="checkbox" value="contents-transaction-haid-index" name="role"> Haid</label>
+                    <label><input type="checkbox" value="contents-transaction-carton-index" name="role"> Carton</label>
+                    <label><input type="checkbox" value="contents-transaction-chop-index" name="role"> Chop</label>
+                </div>
+
+                <h5 style="margin-top: 20px;">PRINT</h5>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="contents-print-gaji_borongan-index" name="role"> Gaji Borongan</label>
+                    <label><input type="checkbox" value="contents-print-gaji_harian-index" name="role"> Gaji Harian</label>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="float-right">
+                        <p id="contents-master-administrator-info" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
+                        <p id="btn-save" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3" onclick="_saveRole()">SAVE</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
