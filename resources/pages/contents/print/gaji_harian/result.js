@@ -1,3 +1,8 @@
+var ipc = null;
+if (ipc === undefined || ipc === null){
+    ipc = require('electron').ipcRenderer;
+}
+
 $(document).ready(async function () {
     await _loadGlobalVariable();
     
@@ -59,9 +64,10 @@ function _loadData() {
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].premi)+"</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].haid)+"</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].potongan_bpjs)+"</td>" +
-                        "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
-                        "<td contenteditable='true' class='revisi_gaji_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].total+"'>"+'0'+"</td>" +
+                        "<td class='total-before text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
+                        "<td contenteditable='true' class='total-revision revisi_gaji_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].total+"'>"+'0'+"</td>" +
                         "<td class='total_after text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
+                        "<td class='name-helper display-none'>"+responseJson.message[i].employee_name+"</td>" +
                         "</tr>"
                     )
                 }
@@ -104,7 +110,9 @@ function _saveGaji() {
         _uploadRevision(id_employee, msit, pokok, premi, haid, potongan_bpjs, total_before, total_revisi, total_after);
     }
     alert('Data saved successfully');
-    $('#contents-print-gaji_harian-index').click();
+    // $('#contents-print-gaji_harian-index').click();
+    $('#btn-next').css('display', 'none');
+    $('#btn-print').css('display', 'block');
 }
 
 function _uploadRevision(id_employee, msit, pokok, premi, haid, potongan_bpjs, total_before, total_revisi, total_after) {
@@ -136,7 +144,7 @@ function _uploadRevision(id_employee, msit, pokok, premi, haid, potongan_bpjs, t
     })
         .then((response) => response.json())
         .then((responseJson) => {
-            console.log(responseJson);
+            // console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
@@ -148,4 +156,20 @@ function _uploadRevision(id_employee, msit, pokok, premi, haid, potongan_bpjs, t
         .catch((error) => {
             alert('Error : ' + error);
         });
+}
+
+function _printToPDF() {
+    const global_var = remote.getGlobal('globalVariable');
+    global_var.start_date = null;
+    global_var.end_date = null;
+    global_var.is_checked = null;
+
+    $('.total-before').css('display', 'none');
+    $('.total-revision').css('display', 'none');
+    $('.name-helper').css('display', 'block');
+    $('#btn-print').css('display', 'none');
+    $('.LAYOUT_PAGE .LEFT').css('display', 'none');
+    ipc.send('print-to-pdf');
+    $('#contents-print-gaji_harian-index').click();
+    // $('.LAYOUT_PAGE .LEFT').css('display', 'block');
 }

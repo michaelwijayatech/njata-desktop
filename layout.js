@@ -65,7 +65,17 @@ function _loadDisplayMenu(element){
             global_var.temp_01 = element.split("-")[4];
         }
 
-        $('.LAYOUT_PAGE .RIGHT').load('./resources/pages/contents/' + parent + '/' + child + '/' + page + '.html');
+        // console.log(global_var.roles);
+        if (global_var.roles === 'all'){
+            $('.LAYOUT_PAGE .RIGHT').load('./resources/pages/contents/' + parent + '/' + child + '/' + page + '.html');
+        } else {
+            var roles = global_var.roles.split("@!#");
+            if (roles.indexOf(element) !== -1){
+                $('.LAYOUT_PAGE .RIGHT').load('./resources/pages/contents/' + parent + '/' + child + '/' + page + '.html');
+            } else {
+                alert("You can not access this menu.");
+            }
+        }
     }
 }
 

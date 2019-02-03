@@ -48,7 +48,10 @@ $('#button-login').click(function(){
         }
 
         if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
-            global_var.user_id = responseJson.message;
+            global_var.user_id = responseJson.message.id;
+            var roles = responseJson.message.role;
+            global_var.roles = roles;
+
             var window = remote.getCurrentWindow();
             main.openWindow('layout');
             window.close();

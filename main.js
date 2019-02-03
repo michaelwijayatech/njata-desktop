@@ -1,12 +1,32 @@
 const electron = require('electron');
 const {app, BrowserWindow, ipcMain} = electron;
+const {autoUpdater} = require('electron-updater');
+
+const path = require('path');
+const url = require('url');
+const nativeImage = electron.nativeImage;
+
+const fs = require('fs');
+const os = require('os');
+const ipc = electron.ipcMain;
+const shell = electron.shell;
+
+let app_icon = nativeImage.createFromPath(path.join(__dirname, 'resources', 'assets', 'Images', 'Logos', '256x256.png'));
+// let app_icon = nativeImage.createFromPath(path.join(__dirname, '64x64.png'));
 
 global.globalVariable = {
     // local_api_ip = '192.168.1.11/wijayatech/njata/webservice/public/api',
-    local_api_ip: 'http://192.168.1.10/wijayatech/njata/webservice/public/api/',
     // local_api_ip: 'http://127.0.0.1/njata-webservice/public/api/',
 
-    local_api_images: 'http://192.168.1.10/wijayatech/njata/webservice/public/images/employee/',
+
+    // PAKE
+    // local_api_ip: 'http://192.168.1.10/wijayatech/njata/webservice/public/api/',
+    local_api_ip: 'http://wijayatech.com/project/njata/webservice/public/api/',
+
+    // local_api_images: 'http://192.168.1.10/wijayatech/njata/webservice/public/images/employee/',
+    local_api_images: 'http://wijayatech.com/project/njata/webservice/public/images/employee/',
+
+    //END PAKE
 
     STATUS_SUCCESS: 200,
     STATUS_ERROR: 404,
@@ -25,6 +45,7 @@ global.globalVariable = {
     is_checked: null,
 
     filter: null,
+    roles: null,
 };
 
 app.on('browser-window-created',function(e,window) {
@@ -37,6 +58,7 @@ app.on('ready', () => {
         height: 728,
         minWidth: 800, 
         minHeight: 600,
+        icon: app_icon,
         // frame: false
     });
     // win.webContents.openDevTools();
@@ -49,7 +71,62 @@ exports.openWindow = (filename) => {
         height: 728,
         minWidth: 800, 
         minHeight: 600,
+        icon: app_icon,
     });
     win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
+
+ipc.on('print-to-pdf', function (event) {
+    const pdfPath = path.join(os.tmpdir(), 'print.pdf');
+    const win = BrowserWindow.fromWebContents(event.sender);
+
+    win.webContents.printToPDF({}, function (error, data) {
+        if (error) return console.log(error.message);
+
+        fs.writeFile(pdfPath, data, function (err) {
+            if (err) return console.log(err.message);
+            shell.openExternal('file://' + pdfPath);
+            event.sender.send('wrote-pdf', pdfPath);
+        });
+    });
+});
+
+ipc.on('check-for-update', function (event) {
+    var updateFeed = "";
+    if (os.platform() === 'darwin'){
+        updateFeed = 'http://wijayatech.com/njata/webservice/public/updater/mac/latest';
+    } else {
+        updateFeed = 'http://wijayatech.com/njata/webservice/public/updater/windows/latest';
+    }
+
+    autoUpdater.setFeedURL(updateFeed);
+
+    autoUpdater.checkForUpdates();
+
+    autoUpdater.on('error', function (err) {
+        event.sender.send('updater-feedback', err);
+    });
+
+    autoUpdater.on('checking-for-update', function () {
+        event.sender.send('updater-feedback', 'Checking for update...');
+    });
+
+    autoUpdater.on('update-available', function (info) {
+        event.sender.send('updater-feedback', info);
+    });
+
+    autoUpdater.on('update-not-available', function (info) {
+        event.sender.send('updater-feedback', info);
+    });
+
+    autoUpdater.on('download-progress', function (progressObj) {
+        event.sender.send('updater-feedback', 'Download Speed : ' + progressObj.bytesPerSecond + ' - Downloaded : ' + progressObj.percent + '% - ' + '( '+ progressObj.transferred +' )');
+    });
+
+    autoUpdater.on('update-downloaded', function (info) {
+        event.sender.send('updater-feedback', 'Update downloaded. Program will restart in a second.');
+
+        autoUpdater.quitAndInstall();
+    });
+});
