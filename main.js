@@ -1,6 +1,7 @@
 const electron = require('electron');
 const {app, BrowserWindow, ipcMain} = electron;
 const {autoUpdater} = require('electron-updater');
+// var electronInstaller = require('electron-winstaller');
 
 const path = require('path');
 const url = require('url');
@@ -11,7 +12,7 @@ const os = require('os');
 const ipc = electron.ipcMain;
 const shell = electron.shell;
 
-let app_icon = nativeImage.createFromPath(path.join(__dirname, 'resources', 'assets', 'Images', 'Logos', '256x256.png'));
+let app_icon = nativeImage.createFromPath(path.join(__dirname, 'resources', 'assets', 'Images', 'Logos', 'windows', '256x256.png'));
 // let app_icon = nativeImage.createFromPath(path.join(__dirname, '64x64.png'));
 
 global.globalVariable = {
@@ -73,7 +74,7 @@ exports.openWindow = (filename) => {
         minHeight: 600,
         icon: app_icon,
     });
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
 

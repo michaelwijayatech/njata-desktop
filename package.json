@@ -1,10 +1,11 @@
 {
   "name": "njata-wijayatech",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "A desktop app for PT Njata Ltd.",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
+    "dist": "build",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=resources/assets/Images/Logos/darwin/256x256.png.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . njata-wijayatech --overwrite --asar=true --platform=win32 --arch=ia32 --icon=resources/assets/Images/Logos/windows/icon.ico --prune=true --out=release-builds --version-string.CompanyName=WT --version-string.FileDescription=WT --version-string.ProductName=\"Wijayatech | PT. Njata Ltd.\"",
     "package-linux": "electron-packager . njata-wijayatech --overwrite --asar=true --platform=linux --arch=x64 --icon=resources/assets/Images/Logos/windows/256x256.png --prune=true --out=release-builds"
@@ -16,7 +17,7 @@
     "App",
     "Electron"
   ],
-  "author": "Michael Chrisdian <michael@wijayatech.com>",
+  "author": "WIJAYATECH <michael@wijayatech.com>",
   "license": "WIJAYATECH",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.4.2",
@@ -29,6 +30,15 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "electron-packager": "^13.0.1"
+    "electron-packager": "^13.0.1",
+    "electron-winstaller": "^2.7.0",
+    "grunt-electron-installer": "^2.1.0"
+  },
+  "build": {
+    "appId": "com.wijayatech.njata",
+    "win": {
+      "target": "nsis",
+      "icon": "resources/assets/Images/Logos/windows/icon.ico"
+    }
   }
 }
