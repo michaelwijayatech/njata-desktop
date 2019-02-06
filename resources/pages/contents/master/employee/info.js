@@ -142,9 +142,10 @@ $('#btn-save').click(function () {
     const global_var = remote.getGlobal('globalVariable');
 
     const api = global_var.local_api_ip;
-    const url = api + 'employee_update_data';
+    const url = api + 'update_data';
 
     const data = {
+        table: "employee",
         id: global_var.temp_01,
         id_company: $('#input_company').val(),
         first_name: $('#input_firstname').val(),
@@ -172,6 +173,7 @@ $('#btn-save').click(function () {
         .then((response) => response.json())
         .then((responseJson) => {
             // console.log(responseJson);
+            // alert(responseJson.message);
             $('#contents-master-employee-info_images').click();
         })
         .catch((error) => {

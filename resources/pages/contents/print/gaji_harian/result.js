@@ -48,7 +48,7 @@ function _loadData() {
     })
         .then((response) => response.json())
         .then((responseJson) => {
-            // console.log(responseJson);
+            console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }

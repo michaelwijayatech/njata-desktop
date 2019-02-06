@@ -70,11 +70,26 @@ function _loadDisplayMenu(element){
             $('.LAYOUT_PAGE .RIGHT').load('./resources/pages/contents/' + parent + '/' + child + '/' + page + '.html');
         } else {
             var roles = global_var.roles.split("@!#");
+            // if (roles.length === 5){
+            //     var elem = element.split("-")[0] + "-" + parent + "-" + child + "-" + page;
+            //     if (roles.indexOf(elem) !== -1){
+            //         $('.LAYOUT_PAGE .RIGHT').load('./resources/pages/contents/' + parent + '/' + child + '/' + page + '.html');
+            //     }
+            // } else {
+            // alert(roles.length);
             if (roles.indexOf(element) !== -1){
                 $('.LAYOUT_PAGE .RIGHT').load('./resources/pages/contents/' + parent + '/' + child + '/' + page + '.html');
             } else {
-                alert("You can not access this menu.");
+                if(element.split("-")[4] !== undefined){
+                    var elem = element.split("-")[0] + "-" + element.split("-")[1] + "-" + element.split("-")[2] + "-" + element.split("-")[3];
+                    if (roles.indexOf(elem) !== -1){
+                        $('.LAYOUT_PAGE .RIGHT').load('./resources/pages/contents/' + parent + '/' + child + '/' + page + '.html');
+                    }
+                } else {
+                    alert("You can not access this menu.");
+                }
             }
+            // }
         }
     }
 }
