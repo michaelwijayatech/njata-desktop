@@ -21,11 +21,11 @@ global.globalVariable = {
 
 
     // PAKE
-    local_api_ip: 'http://192.168.1.10/wijayatech/njata/webservice/public/api/',
-    // local_api_ip: 'http://wijayatech.com/project/njata/webservice/public/api/',
+    // local_api_ip: 'http://192.168.1.10/wijayatech/njata/webservice/public/api/',
+    local_api_ip: 'http://wijayatech.com/project/njata/webservice/public/api/',
 
-    local_api_images: 'http://192.168.1.10/wijayatech/njata/webservice/public/images/employee/',
-    // local_api_images: 'http://wijayatech.com/project/njata/webservice/public/images/employee/',
+    // local_api_images: 'http://192.168.1.10/wijayatech/njata/webservice/public/images/employee/',
+    local_api_images: 'http://wijayatech.com/project/njata/webservice/public/images/employee/',
 
     //END PAKE
 
@@ -74,7 +74,7 @@ exports.openWindow = (filename) => {
         minHeight: 600,
         icon: app_icon,
     });
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
 

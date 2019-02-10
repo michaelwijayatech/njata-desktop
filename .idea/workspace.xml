@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c608750c-c791-4240-847c-30fa89f73290" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/administrator/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/administrator/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pages/contents/transaction/chop/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/chop/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,24 +80,57 @@
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="json" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="174" column="69" lean-forward="true" selection-start-line="174" selection-start-column="69" selection-end-line="174" selection-end-column="69" />
+            <state relative-caret-position="442">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/carton/index.js">
+        <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="1224">
+              <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/role.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="599">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -174,9 +203,7 @@
         <option value="$PROJECT_DIR$/resources/pages/menus/setting/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/setting/check_update/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/setting/check_update/index.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/layout.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/transaction/chop/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js" />
@@ -184,6 +211,8 @@
         <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/info.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/administrator/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -282,10 +311,10 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="829" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-4" />
+    <option name="width" value="1388" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -293,79 +322,84 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="release-builds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
               <item name="master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="administrator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="setting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="carton" type="462c0819:PsiDirectoryNode" />
+              <item name="setting" type="462c0819:PsiDirectoryNode" />
+              <item name="change_password" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="desktop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="chop" type="462c0819:PsiDirectoryNode" />
+              <item name="setting" type="462c0819:PsiDirectoryNode" />
+              <item name="check_update" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,13 +502,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142775000" />
+    <option name="totallyTimeSpent" value="144601000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
+    <frame x="-7" y="-7" width="2354" height="1248" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72053874" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72053874" visible="true" weight="0.24956445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.27946126" side_tool="true" weight="0.24964234" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -489,7 +523,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32971507" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19402985" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19175628" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -659,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="172" selection-start-line="10" selection-start-column="172" selection-end-line="10" selection-end-column="172" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/menus/setting/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -739,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="76" column="35" lean-forward="true" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -812,13 +832,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/role.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="122" lean-forward="true" selection-start-line="25" selection-start-column="122" selection-end-line="25" selection-end-column="122" />
-          <folding>
-            <element signature="n#style#0;n#h5#1;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#1;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="599">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
@@ -840,6 +855,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="174" column="69" lean-forward="true" selection-start-line="174" selection-start-column="69" selection-end-line="174" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
