@@ -3,6 +3,8 @@ var request = require('request');
 
 $(document).ready(function () {
     _loadEmployeeData();
+
+    _calcTableHeight();
 });
 
 function _loadEmployeeData() {

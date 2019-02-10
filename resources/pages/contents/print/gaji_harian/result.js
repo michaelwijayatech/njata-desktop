@@ -14,6 +14,9 @@ $(document).ready(async function () {
         var revisi = $(this).text();
         _setRevisiGaji(id_employee, totalbefore, revisi);
     });
+
+
+    _calcTableHeight(200);
 });
 
 function _loadGlobalVariable() {
@@ -163,6 +166,10 @@ function _printToPDF() {
     global_var.start_date = null;
     global_var.end_date = null;
     global_var.is_checked = null;
+
+    $('#btn-group-custom').removeClass('mt-2');
+    $('#btn-group-custom').removeClass('mb-4');
+    $('.table #table-body tr td').css('font-size', '16px');
 
     $('.total-before').css('display', 'none');
     $('.total-revision').css('display', 'none');

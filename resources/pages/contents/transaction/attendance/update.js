@@ -5,6 +5,8 @@ $(document).ready(function () {
     });
 
     _loadData();
+
+    _calcTableHeight();
 });
 
 function _loadData() {

@@ -2,10 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c608750c-c791-4240-847c-30fa89f73290" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/distributor/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/distributor/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/distributor/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/distributor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/distributor/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/distributor/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/product/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/product/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/product/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/product/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/product/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/product/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/supplier/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/supplier/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/supplier/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/supplier/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/supplier/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/pages/contents/master/supplier/info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/result.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/menus/master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/menus/master/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/pages/menus/transaction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/pages/menus/transaction/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,26 +102,36 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
+          <entry key="html" value="23" />
+          <entry key="js" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="HTML" value="23" />
+          <entry key="JavaScript" value="22" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="json" value="5" />
+          <entry key="html" value="337" />
+          <entry key="js" value="274" />
+          <entry key="json" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="5" />
+          <entry key="HTML" value="337" />
+          <entry key="JSON" value="9" />
+          <entry key="JavaScript" value="274" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -100,37 +139,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/resources/pages/menus/transaction/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/role.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="208">
+              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -162,38 +174,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/index.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/add.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/add.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/info.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/add_detail.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/add_detail.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/group/info.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/carton/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/carton/index.js" />
-        <option value="$PROJECT_DIR$/resources/pages/sidebar/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/menus/print/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/add.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/info.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/add.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/add.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/standard/index.html" />
-        <option value="$PROJECT_DIR$/resources/css/layout.css" />
-        <option value="$PROJECT_DIR$/resources/css/global.css" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/index.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/result.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/index.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/result.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/menus/transaction/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/transaction/chop/index.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/index.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/administrator/info.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/administrator/role.html" />
@@ -204,15 +188,43 @@
         <option value="$PROJECT_DIR$/resources/pages/contents/setting/check_update/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/setting/check_update/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/layout.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/transaction/chop/index.html" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js" />
-        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/info.js" />
         <option value="$PROJECT_DIR$/resources/pages/contents/master/administrator/index.html" />
         <option value="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.js" />
-        <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.js" />
+        <option value="$PROJECT_DIR$/layout.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/result.js" />
+        <option value="$PROJECT_DIR$/resources/pages/menus/master/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/product/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/product/add.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/product/info.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/product/add.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/product/info.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/product/index.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/distributor/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/distributor/index.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/distributor/add.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/distributor/info.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/distributor/add.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/distributor/info.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/supplier/index.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/supplier/index.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/supplier/add.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/supplier/add.js" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/supplier/info.html" />
+        <option value="$PROJECT_DIR$/resources/pages/contents/master/supplier/info.js" />
+        <option value="$PROJECT_DIR$/resources/pages/menus/transaction/index.html" />
       </list>
     </option>
   </component>
@@ -312,9 +324,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-4" />
-    <option name="width" value="1388" />
-    <option name="height" value="790" />
+    <option name="x" value="-6" />
+    <option name="width" value="1390" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -368,7 +380,7 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
               <item name="master" type="462c0819:PsiDirectoryNode" />
-              <item name="administrator" type="462c0819:PsiDirectoryNode" />
+              <item name="distributor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
@@ -376,7 +388,8 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="setting" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="employee" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
@@ -384,8 +397,8 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="setting" type="462c0819:PsiDirectoryNode" />
-              <item name="change_password" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
@@ -393,8 +406,40 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="contents" type="462c0819:PsiDirectoryNode" />
-              <item name="setting" type="462c0819:PsiDirectoryNode" />
-              <item name="check_update" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="supplier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="contents" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="contents" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="menus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="njata-desktop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="njata-desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="menus" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -413,15 +458,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wijayatech\njata\desktop\njata-desktop\resources\pages\contents\master\supplier" />
+      <recent name="C:\xampp\htdocs\wijayatech\njata\desktop\njata-desktop\resources\pages\contents\master\distributor" />
+      <recent name="C:\xampp\htdocs\wijayatech\njata\desktop\njata-desktop\resources\pages\contents\master\product" />
       <recent name="$PROJECT_DIR$/resources/assets/Images/Logos/windows" />
       <recent name="$PROJECT_DIR$/resources/pages/contents/setting/check_update" />
-      <recent name="$PROJECT_DIR$/resources/assets/Images/Logos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/resources/pages/contents/master/administrator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -498,22 +543,23 @@
       <workItem from="1549028262710" duration="4362000" />
       <workItem from="1549201399361" duration="9567000" />
       <workItem from="1549445556209" duration="269000" />
+      <workItem from="1549772567777" duration="9365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144601000" />
+    <option name="totallyTimeSpent" value="153966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2354" height="1248" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72053874" visible="true" weight="0.24956445" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72053874" visible="true" weight="0.25174215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.27946126" side_tool="true" weight="0.24964234" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32971507" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885304" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.32971507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -537,183 +583,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/result.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="47" column="58" lean-forward="true" selection-start-line="47" selection-start-column="58" selection-end-line="47" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/carton/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/haid/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1455">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/contact/add.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/sectional.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/menus/transaction/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/menus/print/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="186" selection-start-line="18" selection-start-column="175" selection-end-line="18" selection-end-column="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/holiday/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/menus/master/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="195" selection-start-line="42" selection-start-column="160" selection-end-line="42" selection-end-column="195" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/menus/dashboard/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/role.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/menus/setting/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/setting/check_update/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/setting/check_update/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -721,29 +590,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="104" column="37" lean-forward="true" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/chop/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -752,50 +600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/chop/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
           <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2438" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="53" column="45" lean-forward="true" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="207" column="66" lean-forward="true" selection-start-line="207" selection-start-column="66" selection-end-line="207" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -830,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/role.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/info.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -851,24 +652,283 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/administrator/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/info_images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add_images.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="174" column="69" lean-forward="true" selection-start-line="174" selection-start-column="69" selection-end-line="174" selection-end-column="69" />
+        <state relative-caret-position="34">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/attendance/update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/transaction/attendance/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="177" column="35" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="203" column="56" lean-forward="true" selection-start-line="203" selection-start-column="56" selection-end-line="203" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_harian/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="39" column="72" lean-forward="true" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/menus/master/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/print/gaji_borongan/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/product/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/product/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/product/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/product/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/product/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/product/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/distributor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/distributor/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/distributor/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/employee/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="69" column="38" lean-forward="true" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/distributor/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/distributor/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/distributor/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="54" column="37" lean-forward="true" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/supplier/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/supplier/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/supplier/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="59" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/supplier/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/supplier/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/contents/master/supplier/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="46" column="58" lean-forward="true" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/pages/menus/transaction/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
         </state>
       </provider>
     </entry>

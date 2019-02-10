@@ -2,7 +2,7 @@ var fs = require('fs');
 var request = require('request');
 
 $(document).ready(function () {
-
+    _calcTableHeight();
 });
 
 //region KTP

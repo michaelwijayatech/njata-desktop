@@ -199,8 +199,8 @@ function _loadCompanyData(){
         });
 }
 
-function _calcTableHeight() {
+function _calcTableHeight(HEIGHT = 130) {
     var window_height = window.innerHeight;
-    $('.scrollable-table').css('height', (window_height - 130) + "px");
+    $('.scrollable-table').css('height', (window_height - HEIGHT) + "px");
     $('.scrollable-table').css('overflow', 'auto');
 }
