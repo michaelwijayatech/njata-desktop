@@ -204,3 +204,12 @@ function _calcTableHeight(HEIGHT = 130) {
     $('.scrollable-table').css('height', (window_height - HEIGHT) + "px");
     $('.scrollable-table').css('overflow', 'auto');
 }
+
+function _removeMoneySeparator(MONEY) {
+    var result = "";
+    var _money = MONEY.split('.');
+    for (var i=0; i<_money.length; i++){
+        result += _money[i];
+    }
+    return result;
+}

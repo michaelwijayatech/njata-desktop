@@ -13,6 +13,9 @@ $('#button-login').click(function(){
     // const url = 'https://randomuser.me/api/?results=10';
 
 
+    $('#button-login').addClass('display-none');
+    $('#button-process').removeClass('display-none');
+
 
     const global_var = remote.getGlobal('globalVariable');
 
@@ -43,6 +46,8 @@ $('#button-login').click(function(){
     .then((response) => response.json())
     .then((responseJson) => {
         // console.log(responseJson);
+        $('#button-login').removeClass('display-none');
+        $('#button-process').addClass('display-none');
         if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
             alert(responseJson.message);
         }

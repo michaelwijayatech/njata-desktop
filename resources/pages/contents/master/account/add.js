@@ -1,7 +1,5 @@
 $(document).ready(function () {
-    $('#input_price').keyup(function () {
-        $('#input_price').val(_moneySeparator($('#input_price').val()));
-    });
+
 });
 
 $('#btn-save').click(function () {
@@ -11,10 +9,9 @@ $('#btn-save').click(function () {
     const url = api + 'add_data';
 
     const data = {
-        table: "product",
+        table: "account",
         name: $('#input_name').val(),
-        price: $('#input_price').val(),
-        gram: $('#input_gram').val(),
+        number: $('#input_account_number').val(),
     };
 
     fetch(url, {
@@ -34,7 +31,7 @@ $('#btn-save').click(function () {
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
                 //     alert(responseJson.message);
-                $('#contents-master-product-index').click();
+                $('#contents-master-account-index').click();
             }
         })
         .catch((error) => {

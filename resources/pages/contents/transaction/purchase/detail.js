@@ -1,9 +1,10 @@
 $(document).ready(async function () {
-    $('#input_price').keyup(function () {
-        $('#input_price').val(_moneySeparator($('#input_price').val()));
-    });
-
     await _loadData();
+
+    $('#input_date').datetimepicker({
+        format: 'd-m-Y',
+        timepicker:false,
+    });
 });
 
 function _loadData() {
@@ -13,7 +14,7 @@ function _loadData() {
     const url = api + 'load_data';
 
     const data = {
-        table: "product",
+        table: "purchase_detail",
         id: global_var.temp_01
     };
 
@@ -33,9 +34,11 @@ function _loadData() {
             }
 
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                $('#input_id').val(responseJson.message.id);
+                $('#input_date').val(responseJson.message.date);
                 $('#input_name').val(responseJson.message.name);
-                $('#input_price').val(responseJson.message.price);
-                $('#input_gram').val(responseJson.message.gram);
+                $('#input_nominal').val(responseJson.message.nominal);
+                $('#input_description').val(responseJson.message.description);
             }
         })
         .catch((error) => {
@@ -44,21 +47,18 @@ function _loadData() {
 }
 
 $('#btn-save').click(function () {
-    _updateData();
-});
-
-function _updateData() {
     const global_var = remote.getGlobal('globalVariable');
 
     const api = global_var.local_api_ip;
     const url = api + 'update_data';
 
     const data = {
-        table: "product",
+        table: "purchase",
         id: global_var.temp_01,
+        date: $('#input_date').val(),
         name: $('#input_name').val(),
-        price: $('#input_price').val(),
-        gram: $('#input_gram').val()
+        description: $('#input_description').val(),
+        nominal: $('#input_nominal').val(),
     };
 
     fetch(url, {
@@ -78,10 +78,10 @@ function _updateData() {
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
                 alert(responseJson.message);
-                $('#contents-master-product-index').click();
+                $('#contents-transaction-purchase-info').click();
             }
         })
         .catch((error) => {
             alert('Error : ' + error);
         });
-}
+});

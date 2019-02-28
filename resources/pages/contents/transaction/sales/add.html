@@ -1,0 +1,135 @@
+<div class="body-content flex-column">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="text-uppercase">sales | add</h4>
+            <br>
+        </div>
+
+        <div class="col-sm-4 mb-1">
+            <!--<input class="form-control" id="table-search-input" type="text" placeholder="Search.." onkeyup="_filterTable()">-->
+        </div>
+        <div class="col-sm-8 mb-1">
+            <!--<button id="contents-transaction-purchase-params" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_setActiveSidebar(this)">DETAIL</button>-->
+        </div>
+
+        <div class="col-sm-12 step-1">
+            <h5>Choose Distributor : </h5>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-1 scrollable-table">
+            <table class="table table-bordered table-striped first-step ">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <!--<th>Att</th>-->
+                    <th class="text-center">Action</th>
+                    <!--<th class="text-center width width-120">Info</th>-->
+                    <!--<th class="text-center width width-80">Info</th>-->
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                <!--TABLE FIELD SHOW HERE-->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-12 step-2 display-none">
+            <h5>Distributor : </h5>
+        </div>
+        <div class="col-sm-4 step-2 display-none">
+            <input class="form-control" id="distributor_id" type="text" placeholder="ID" disabled>
+        </div>
+        <div class="col-sm-4 step-2 display-none">
+            <input class="form-control" id="distributor_name" type="text" placeholder="Name" disabled>
+        </div>
+        <div class="col-sm-4 step-2 display-none">
+            <button class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" id="btn_search_distributor" onclick="_changeDistributor(this)">Change</button>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-2 display-none">
+            <form>
+                <div class="form-row display-none">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="product_id">ID *</label>
+                            <input type="text" class="form-control" id="product_id" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="product_price">Price *</label>
+                            <input type="text" class="form-control" id="product_price" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="nota_number">Nota Number *</label>
+                            <input type="text" class="form-control" id="nota_number" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="input_name">Name *</label>
+                            <input type="text" class="form-control" id="input_name" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="input_carton">Carton *</label>
+                            <input type="text" class="form-control" id="input_carton" placeholder="Type here">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-12 step-2 display-none">
+            <div class="float-right">
+                <p id="btn-add-product" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3" onclick="_btn_add()">ADD</p>
+            </div>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-2 scrollable-table display-none">
+            <table class="table table-bordered table-striped" id="table-product">
+                <thead>
+                <tr>
+                    <th class="display-none">ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                    <th class="text-center">Action</th>
+                </tr>
+                </thead>
+                <tbody id="table-body-product">
+                <!--TABLE FIELD SHOW HERE-->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-12 step-2 display-none">
+            <h6>Total : </h6>
+        </div>
+        <div class="col-sm-6 step-2 display-none">
+            <input class="form-control" id="total_price" type="text" placeholder="0" value="0" disabled>
+        </div>
+
+        <div class="col-sm-6 step-2 display-none">
+            <div class="float-right">
+                <p id="btn-process" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">PROCESSING</p>
+                <p id="btn-save" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3" onclick="_btn_save()">SAVE</p>
+            </div>
+        </div>
+
+        <!--<p id="contents-transaction-purchase-index" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>-->
+    </div>
+</div>

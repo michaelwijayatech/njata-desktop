@@ -1,8 +1,4 @@
 $(document).ready(async function () {
-    $('#input_price').keyup(function () {
-        $('#input_price').val(_moneySeparator($('#input_price').val()));
-    });
-
     await _loadData();
 });
 
@@ -13,7 +9,7 @@ function _loadData() {
     const url = api + 'load_data';
 
     const data = {
-        table: "product",
+        table: "account",
         id: global_var.temp_01
     };
 
@@ -34,8 +30,7 @@ function _loadData() {
 
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
                 $('#input_name').val(responseJson.message.name);
-                $('#input_price').val(responseJson.message.price);
-                $('#input_gram').val(responseJson.message.gram);
+                $('#input_account_number').val(responseJson.message.number);
             }
         })
         .catch((error) => {
@@ -54,11 +49,10 @@ function _updateData() {
     const url = api + 'update_data';
 
     const data = {
-        table: "product",
+        table: "account",
         id: global_var.temp_01,
         name: $('#input_name').val(),
-        price: $('#input_price').val(),
-        gram: $('#input_gram').val()
+        number: $('#input_account_number').val(),
     };
 
     fetch(url, {
@@ -78,7 +72,7 @@ function _updateData() {
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
                 alert(responseJson.message);
-                $('#contents-master-product-index').click();
+                // $('#contents-master-contact-index').click();
             }
         })
         .catch((error) => {

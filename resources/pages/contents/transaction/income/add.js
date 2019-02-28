@@ -1,7 +1,9 @@
 $(document).ready(function () {
-    $('#input_price').keyup(function () {
-        $('#input_price').val(_moneySeparator($('#input_price').val()));
+    $('#input_nominal').keyup(function () {
+        $('#input_nominal').val(_moneySeparator($('#input_nominal').val()));
     });
+
+    _calcTableHeight(360);
 });
 
 $('#btn-save').click(function () {
@@ -11,10 +13,10 @@ $('#btn-save').click(function () {
     const url = api + 'add_data';
 
     const data = {
-        table: "product",
+        table: "income",
         name: $('#input_name').val(),
-        price: $('#input_price').val(),
-        gram: $('#input_gram').val(),
+        nominal: $('#input_nominal').val(),
+        description: $('#input_description').val(),
     };
 
     fetch(url, {
@@ -33,8 +35,8 @@ $('#btn-save').click(function () {
             }
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
-                //     alert(responseJson.message);
-                $('#contents-master-product-index').click();
+                alert(responseJson.message);
+                $('#contents-transaction-income-add').click();
             }
         })
         .catch((error) => {

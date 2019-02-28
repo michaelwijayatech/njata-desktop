@@ -1,0 +1,95 @@
+<div class="body-content flex-column">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="text-uppercase">sales | info</h4>
+            <br>
+        </div>
+
+        <div class="col-sm-12 step-1">
+            <h6>Nota Number : </h6>
+        </div>
+        <div class="col-sm-6 step-1">
+            <input class="form-control" id="nota_number" type="text" placeholder="Nota Number">
+        </div>
+        <div class="col-sm-6 step-1">
+            <button class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" id="btn_search_distributor" onclick="_btn_search()">Search</button>
+        </div>
+
+        <div class="col-sm-12 step-2 mt-3">
+            <h6>Distributor : </h6>
+        </div>
+        <div class="col-sm-6 step-2">
+            <input class="form-control" id="distributor_id" type="text" placeholder="ID" disabled>
+        </div>
+        <div class="col-sm-6 step-2">
+            <input class="form-control" id="distributor_name" type="text" placeholder="Name" disabled>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-2 display-none1">
+            <form>
+                <div class="form-row display-none1">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="sales_date">Sales Date</label>
+                            <input type="text" class="form-control text-right" id="sales_date" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="total_price">Total</label>
+                            <input type="text" class="form-control text-right" id="total_price" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="total_paid">Paid</label>
+                            <input type="text" class="form-control text-right" id="total_paid" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-2">
+            <form>
+                <div class="form-row display-none">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="sales_id">SALES ID *</label>
+                            <input type="text" class="form-control" id="sales_id" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-2 scrollable-table">
+            <table class="table table-bordered table-striped" id="table-product">
+                <thead>
+                <tr>
+                    <th class="display-none">ID SALES DETAIL</th>
+                    <th class="display-none">ID PRODUCT</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+                </thead>
+                <tbody id="table-body-product">
+                <!--TABLE FIELD SHOW HERE-->
+                </tbody>
+            </table>
+        </div>
+
+        <!--<div class="col-sm-6 step-2 display-none">-->
+            <!--<div class="float-right">-->
+                <!--<p id="btn-process" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">PROCESSING</p>-->
+                <!--<p id="btn-save" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3" onclick="_btn_save()">SAVE</p>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<p id="contents-transaction-purchase-index" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>-->
+    </div>
+</div>

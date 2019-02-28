@@ -44,6 +44,7 @@ global.globalVariable = {
     start_date: null,
     end_date: null,
     is_checked: null,
+    supplier: null,
 
     filter: null,
     roles: null,
@@ -71,6 +72,18 @@ exports.openWindow = (filename) => {
         width: 1024,
         height: 728,
         minWidth: 800, 
+        minHeight: 600,
+        icon: app_icon,
+    });
+    win.webContents.openDevTools();
+    win.loadURL(`file://${__dirname}/` + filename + `.html`);
+};
+
+exports.openPopUpWindow = (filename) => {
+    let win = new BrowserWindow({
+        width: 400,
+        height: 728,
+        minWidth: 400,
         minHeight: 600,
         icon: app_icon,
     });

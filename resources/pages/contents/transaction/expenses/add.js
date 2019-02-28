@@ -1,20 +1,22 @@
-$(document).ready(async function () {
-    $('#input_price').keyup(function () {
-        $('#input_price').val(_moneySeparator($('#input_price').val()));
+$(document).ready(function () {
+    _loadAccountData();
+
+    $('#input_nominal').keyup(function () {
+        $('#input_nominal').val(_moneySeparator($('#input_nominal').val()));
     });
 
-    await _loadData();
+    _calcTableHeight(360);
 });
 
-function _loadData() {
+function _loadAccountData(){
     const global_var = remote.getGlobal('globalVariable');
 
     const api = global_var.local_api_ip;
     const url = api + 'load_data';
 
     const data = {
-        table: "product",
-        id: global_var.temp_01
+        table: "account",
+        id: "all"
     };
 
     fetch(url, {
@@ -33,9 +35,11 @@ function _loadData() {
             }
 
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
-                $('#input_name').val(responseJson.message.name);
-                $('#input_price').val(responseJson.message.price);
-                $('#input_gram').val(responseJson.message.gram);
+                for(var i=0; i<responseJson.message.length; i++){
+                    $("#input_account").append(
+                        "<option value='"+responseJson.message[i].id+"' id='input-account-"+responseJson.message[i].id+"'>" + responseJson.message[i].name + "</option>"
+                    )
+                }
             }
         })
         .catch((error) => {
@@ -44,21 +48,17 @@ function _loadData() {
 }
 
 $('#btn-save').click(function () {
-    _updateData();
-});
-
-function _updateData() {
     const global_var = remote.getGlobal('globalVariable');
 
     const api = global_var.local_api_ip;
-    const url = api + 'update_data';
+    const url = api + 'add_data';
 
     const data = {
-        table: "product",
-        id: global_var.temp_01,
+        table: "expenses",
+        id_account: $('#input_account').val(),
         name: $('#input_name').val(),
-        price: $('#input_price').val(),
-        gram: $('#input_gram').val()
+        nominal: $('#input_nominal').val(),
+        description: $('#input_description').val(),
     };
 
     fetch(url, {
@@ -78,10 +78,10 @@ function _updateData() {
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
                 alert(responseJson.message);
-                $('#contents-master-product-index').click();
+                $('#contents-transaction-expenses-add').click();
             }
         })
         .catch((error) => {
             alert('Error : ' + error);
         });
-}
+});

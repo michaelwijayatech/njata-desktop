@@ -1,0 +1,126 @@
+<div class="body-content flex-column">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="text-uppercase">payment | add</h4>
+            <br>
+        </div>
+
+        <div class="col-sm-12 mb-1">
+            <button id="btn-choose-by-distributor" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_chooseByDistributor()">CHOOSE BY DISTRIBUTOR </button>
+        </div>
+
+        <div class="col-sm-6 step- display-none">
+            <input class="form-control" id="distributor_id" type="text" placeholder="ID" disabled>
+        </div>
+
+        <div class="col-sm-6 step- display-none">
+            <input class="form-control" id="sales_id" type="text" placeholder="ID" disabled>
+        </div>
+
+        <div class="col-sm-12 step-1 display-none">
+            <h6>Distributor : </h6>
+        </div>
+        <div class="col-sm-6 step-1 display-none">
+            <input class="form-control" id="distributor_name" type="text" placeholder="Name">
+        </div>
+        <div class="col-sm-6 step-1 display-none">
+            <button class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" id="btn_search_distributor" onclick="_searchByDistributor()">Search</button>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-1 scrollable-table display-none">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="width-100">Date</th>
+                    <th class="width-100">Total</th>
+                    <th class="width-100">Paid</th>
+                    <!--<th>Att</th>-->
+                    <th class="text-center width-80">Action</th>
+                    <!--<th class="text-center width width-120">Info</th>-->
+                    <!--<th class="text-center width width-80">Info</th>-->
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                <!--TABLE FIELD SHOW HERE-->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-12 step-2">
+            <h6>Nota : </h6>
+        </div>
+        <div class="col-sm-6 step-2">
+            <input class="form-control" id="nota_number" type="text" placeholder="Nota Number">
+        </div>
+        <div class="col-sm-6 step-2">
+            <button class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" id="btn_search_by_nota_number" onclick="_searchByNotaNumber()">Search</button>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-2 display-none1">
+            <form>
+                <div class="form-row display-none1">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="distributor_name_2">Distributor Name</label>
+                            <input type="text" class="form-control" id="distributor_name_2" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="sales_date">Sales Date</label>
+                            <input type="text" class="form-control" id="sales_date" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row display-none1">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="total_price">Total</label>
+                            <input type="text" class="form-control text-right" id="total_price" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="total_paid">Paid</label>
+                            <input type="text" class="form-control text-right" id="total_paid" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="total_debt">Debt</label>
+                            <input type="text" class="form-control text-right" id="total_debt" placeholder="Type here" disabled>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-sm-12 mt-3 step-2 scrollable-table">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="width-100">Quantity</th>
+                    <th class="width-100">Price</th>
+                    <th class="width-100">Subtotal</th>
+                </tr>
+                </thead>
+                <tbody id="table-body-product">
+                <!--TABLE FIELD SHOW HERE-->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-sm-12 step-2">
+            <h6>Payment : </h6>
+        </div>
+        <div class="col-sm-6 step-2">
+            <input class="form-control text-right" id="pay_nominal" type="text" placeholder="Nominal">
+        </div>
+        <div class="col-sm-6 step-2">
+            <button class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" id="btn_pay" onclick="_btn_pay()">PAY</button>
+        </div>
+
+    </div>
+</div>
