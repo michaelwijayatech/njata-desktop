@@ -1,0 +1,35 @@
+<div class="body-content flex-column">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="text-uppercase">carton</h4>
+            <br>
+        </div>
+
+        <div class="col-sm-4">
+            <input class="form-control" id="input-date" type="text" placeholder="Date">
+        </div>
+        <div class="col-sm-8">
+            <button id="search-by-date" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_searchByDate()">SEARCH</button>
+        </div>
+
+        <div class="col-sm-12 mt-3">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="text-center width width-120">Cartons</th>
+                    <!--<th class="text-center width width-80">Info</th>-->
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                <!--TABLE FIELD SHOW HERE-->
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-sm-12">
+            <p id="contents-advance-carton-destroy" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right">DESTROY</p>
+        </div>
+    </div>
+</div>

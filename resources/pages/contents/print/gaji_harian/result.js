@@ -63,6 +63,7 @@ function _loadData() {
                         "<td class='display-none'>"+responseJson.message[i].id_employee+"</td>" +
                         "<td>"+responseJson.message[i].employee_name+"</td>" +
                         "<td class='text-center'>"+responseJson.message[i].msit+"</td>" +
+                        "<td class='text-center'>"+responseJson.message[i].libur+ " | " +responseJson.message[i].rajang+ "</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].pokok)+"</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].premi)+"</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].haid)+"</td>" +

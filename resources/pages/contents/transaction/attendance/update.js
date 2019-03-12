@@ -61,7 +61,7 @@ function _setChooseEmployee(element) {
     var _id = element.id;
     var employee_id = _id.split("@!#")[0];
     var employee_name = _id.split("@!#")[1];
-
+    // _calcTableHeight();
     $('#employee_name').val(employee_name);
     $('#employee_id').val(employee_id);
 

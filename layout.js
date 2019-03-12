@@ -136,6 +136,18 @@ function _moneySeparatorNoKeyCode(nStr) {
     return x1 + x2;
 }
 
+function _phoneSeparatorNoKeyCode(nStr) {
+    nStr += '';
+    x = nStr.split('-');
+    x1 = x[0];
+    x2 = x.length > 1 ? '-' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + '-' + '$2');
+    }
+    return x1 + x2;
+}
+
 function _checkInput_isEmpty(id){
     var cek_input = $('#' + id).val();
     if(cek_input === "" || cek_input === null){

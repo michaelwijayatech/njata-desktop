@@ -34,6 +34,7 @@ function _loadContactData() {
                         "<tr>" +
                         "<td>"+responseJson.message[i].first_name+ " " +responseJson.message[i].last_name+"</td>" +
                         "<td>"+responseJson.message[i].description+"</td>" +
+                        "<td class='text-right'>"+_phoneSeparatorNoKeyCode(responseJson.message[i].phone_1)+"</td>" +
                         "<td id='contents-master-contact-info-"+responseJson.message[i].id+"' onclick=\"_setActiveSidebar(this)\" class=\"text-center width width-80 color-green1 cursor-pointer\">Info</td>" +
                         "</tr>"
                     )
