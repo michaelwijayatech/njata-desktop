@@ -1,6 +1,7 @@
 const electron = require('electron');
 const {app, BrowserWindow, ipcMain} = electron;
 const {autoUpdater} = require('electron-updater');
+const PDFWindow = require('electron-pdf-window');
 // var electronInstaller = require('electron-winstaller');
 
 const path = require('path');
@@ -26,6 +27,7 @@ global.globalVariable = {
 
     // local_api_images: 'http://192.168.1.9/wijayatech/njata/webservice/public/images/employee/',
     local_api_images: 'http://wijayatech.com/project/njata/webservice/public/images/employee/',
+    local_api_pdf: 'http://wijayatech.com/project/njata/webservice/public/pdf/',
 
     //END PAKE
 
@@ -71,12 +73,24 @@ exports.openWindow = (filename) => {
     let win = new BrowserWindow({
         width: 1024,
         height: 728,
-        minWidth: 800, 
+        minWidth: 800,
         minHeight: 600,
         icon: app_icon,
     });
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
+};
+
+exports.openPDFWindow = (filename) => {
+    let win = new PDFWindow({
+        width: 1024,
+        height: 728,
+        minWidth: 800,
+        minHeight: 600,
+        icon: app_icon,
+    });
+    // win.webContents.openDevTools();
+    win.loadURL(globalVariable.local_api_pdf + filename);
 };
 
 exports.openPopUpWindow = (filename) => {
@@ -93,6 +107,7 @@ exports.openPopUpWindow = (filename) => {
 
 ipc.on('print-to-pdf', function (event) {
     const pdfPath = path.join(os.tmpdir(), 'print.pdf');
+    // const pdfPathServer = path.join('http://wijayatech.com/project/njata/webservice/public/pdf/test.pdf');
     const win = BrowserWindow.fromWebContents(event.sender);
 
     win.webContents.printToPDF({}, function (error, data) {
@@ -100,6 +115,7 @@ ipc.on('print-to-pdf', function (event) {
 
         fs.writeFile(pdfPath, data, function (err) {
             if (err) return console.log(err.message);
+            // shell.openExternal('file://' + pdfPath);
             shell.openExternal('file://' + pdfPath);
             event.sender.send('wrote-pdf', pdfPath);
         });
