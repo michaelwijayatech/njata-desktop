@@ -51,7 +51,7 @@ function _loadData() {
     })
         .then((response) => response.json())
         .then((responseJson) => {
-            console.log(responseJson);
+            // console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
@@ -96,27 +96,73 @@ function _setRevisiGaji(id_employee, totalbefore, revisi) {
 }
 
 function _saveGaji() {
+    var datas = "";
     var table, tr, i;
     table = document.getElementById("table-body");
     tr = table.getElementsByTagName("tr");
     for (i = 0; i < tr.length; i++) {
         var id_employee = tr[i].getElementsByTagName("td")[0].textContent || tr[i].getElementsByTagName("td")[0].innerText;
+        var name = tr[i].getElementsByTagName("td")[1].textContent || tr[i].getElementsByTagName("td")[1].innerText;
         var msit = tr[i].getElementsByTagName("td")[2].textContent || tr[i].getElementsByTagName("td")[2].innerText;
-        var pokok = tr[i].getElementsByTagName("td")[3].textContent || tr[i].getElementsByTagName("td")[3].innerText;
-        var premi = tr[i].getElementsByTagName("td")[4].textContent || tr[i].getElementsByTagName("td")[4].innerText;
-        var haid = tr[i].getElementsByTagName("td")[5].textContent || tr[i].getElementsByTagName("td")[5].innerText;
-        var potongan_bpjs = tr[i].getElementsByTagName("td")[6].textContent || tr[i].getElementsByTagName("td")[6].innerText;
-        var total_before = tr[i].getElementsByTagName("td")[7].textContent || tr[i].getElementsByTagName("td")[7].innerText;
-        var total_revisi = tr[i].getElementsByTagName("td")[8].textContent || tr[i].getElementsByTagName("td")[8].innerText;
-        var total_after = tr[i].getElementsByTagName("td")[9].textContent || tr[i].getElementsByTagName("td")[9].innerText;
+        var lr = tr[i].getElementsByTagName("td")[3].textContent || tr[i].getElementsByTagName("td")[3].innerText;
+        var pokok = tr[i].getElementsByTagName("td")[4].textContent || tr[i].getElementsByTagName("td")[4].innerText;
+        var premi = tr[i].getElementsByTagName("td")[5].textContent || tr[i].getElementsByTagName("td")[5].innerText;
+        var haid = tr[i].getElementsByTagName("td")[6].textContent || tr[i].getElementsByTagName("td")[6].innerText;
+        var potongan_bpjs = tr[i].getElementsByTagName("td")[7].textContent || tr[i].getElementsByTagName("td")[7].innerText;
+        var total_before = tr[i].getElementsByTagName("td")[8].textContent || tr[i].getElementsByTagName("td")[8].innerText;
+        var total_revisi = tr[i].getElementsByTagName("td")[9].textContent || tr[i].getElementsByTagName("td")[9].innerText;
+        var total_after = tr[i].getElementsByTagName("td")[10].textContent || tr[i].getElementsByTagName("td")[10].innerText;
         // alert(id_employee + ' | ' + total_before + ' | ' + total_revisi + ' | ' + total_after);
 
-        _uploadRevision(id_employee, msit, pokok, premi, haid, potongan_bpjs, total_before, total_revisi, total_after);
+        datas += id_employee + '#' + name + '#' + msit  + '#' + lr + '#' + pokok + '#' + premi + '#' + haid + '#' + potongan_bpjs + '#' + total_before + '#' + total_revisi + '#' + total_after + '@';
+
+        // _uploadRevision(id_employee, msit, pokok, premi, haid, potongan_bpjs, total_before, total_revisi, total_after);
     }
+    _uploadGajiHarian(datas);
     alert('Data saved successfully');
     // $('#contents-print-gaji_harian-index').click();
     $('#btn-next').css('display', 'none');
     $('#btn-print').css('display', 'block');
+}
+
+function _uploadGajiHarian(DATAS) {
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'print_data';
+
+    const data = {
+        table: "gaji_harian",
+        start_date: global_var.start_date,
+        end_date: global_var.end_date,
+        potongan_bpjs: global_var.is_checked,
+        datas: DATAS
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                // _loadData();
+                // console.log(responseJson.message);
+                main.openPDFWindow(responseJson.message);
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
 }
 
 function _uploadRevision(id_employee, msit, pokok, premi, haid, potongan_bpjs, total_before, total_revisi, total_after) {

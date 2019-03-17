@@ -39,7 +39,15 @@
   "build": {
     "appId": "com.wijayatech.njata",
     "win": {
-      "target": "nsis",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
       "icon": "resources/assets/Images/Logos/windows/icon.ico"
     }
   }

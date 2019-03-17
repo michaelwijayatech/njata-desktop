@@ -27,6 +27,8 @@ global.globalVariable = {
 
     // local_api_images: 'http://192.168.1.9/wijayatech/njata/webservice/public/images/employee/',
     local_api_images: 'http://wijayatech.com/project/njata/webservice/public/images/employee/',
+
+    // local_api_pdf: 'http://192.168.1.9/wijayatech/njata/webservice/public/pdf/',
     local_api_pdf: 'http://wijayatech.com/project/njata/webservice/public/pdf/',
 
     //END PAKE
