@@ -24,22 +24,24 @@
             </div>
         </div>
 
+        <div class="col-sm-4 display-none">
+            <div class="form-group">
+                <label for="total_hari">Total Hari</label>
+                <input type="text" class="form-control" id="total_hari" placeholder="0" disabled>
+            </div>
+        </div>
+
+        <div class="col-sm-4 display-none">
+            <div class="form-group">
+                <label for="hari">Hari</label>
+                <input type="text" class="form-control" id="hari" placeholder="Hari" disabled>
+            </div>
+        </div>
+
         <div class="col-sm-12 mt-3 scrollable-table">
             <table class="table table-bordered table-striped table-hover">
                 <thead>
                 <tr>
-                    <th class="display-none">ID</th>
-                    <th>Name</th>
-                    <th class="text-center width width-100">M | S | I | T</th>
-                    <th class="text-center width width-80">L | R</th>
-                    <th class="text-center width">Pokok</th>
-                    <th class="text-center width">Premi</th>
-                    <th class="text-center width">Haid</th>
-                    <th class="text-center width">Potongan BPJS</th>
-                    <th class="total-before text-center width">Total</th>
-                    <th class="total-revision text-center width width-50">Revisi</th>
-                    <th class="total-after text-center width">Total</th>
-                    <th class="name-helper display-none">Name</th>
                     <!--<th class="text-center width width-80">Info</th>-->
                 </tr>
                 </thead>
@@ -52,7 +54,8 @@
         <div class="col-sm-12 mt-2 mb-4" id="btn-group-custom">
             <button id="contents-print-gaji_harian-index" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right display-none" onclick="_setActiveSidebar(this)">CANCEL</button>
             <!--<button id="btn-next" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_saveGaji()">NEXT</button>-->
-            <button id="btn-print" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_saveGaji()">PRINT</button>
+            <button id="btn-print-tt" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_saveGaji(this)">PRINT TT</button>
+            <button id="btn-print" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_saveGaji(this)">PRINT</button>
         </div>
 
 

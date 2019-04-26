@@ -1,5 +1,6 @@
 $(document).ready(function () {
     _loadContactData();
+    _calcTableHeight();
 });
 
 function _loadContactData() {
@@ -24,6 +25,7 @@ function _loadContactData() {
         .then((response) => response.json())
         .then((responseJson) => {
             // console.log(responseJson);
+            $("#table-body").html("");
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
@@ -36,9 +38,46 @@ function _loadContactData() {
                         "<td>"+responseJson.message[i].description+"</td>" +
                         "<td class='text-right'>"+_phoneSeparatorNoKeyCode(responseJson.message[i].phone_1)+"</td>" +
                         "<td id='contents-master-contact-info-"+responseJson.message[i].id+"' onclick=\"_setActiveSidebar(this)\" class=\"text-center width width-80 color-green1 cursor-pointer\">Info</td>" +
+                        "<td id='"+responseJson.message[i].id+"' onclick=\"_deleteData(this)\" class=\"text-center width width-80 color-red1 cursor-pointer\">Delete</td>" +
                         "</tr>"
                     )
                 }
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}
+
+function _deleteData(element) {
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'delete_data';
+
+    const data = {
+        table: "contact",
+        id: element.id
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                alert(responseJson.message);
+                _loadContactData();
             }
         })
         .catch((error) => {

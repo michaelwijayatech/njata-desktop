@@ -37,6 +37,7 @@ function _loadData() {
                             "<td>"+responseJson.message[i].first_name+" "+responseJson.message[i].last_name+"</td>" +
                             "<td>"+responseJson.message[i].status+"</td>" +
                             "<td>" +
+                            "<button id='"+responseJson.message[i].id+"' data-idtemp='5' class=\"5 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'sakit', 'add')\">SAKIT</button>" +
                             "<button id='"+responseJson.message[i].id+"' data-idtemp='1' class=\"1 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'ijin', 'add')\">IJIN</button>" +
                             "<button id='"+responseJson.message[i].id+"' data-idtemp='2' class=\"2 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'tidak masuk', 'add')\">TDK MASUK</button>" +
                             "<button id='"+responseJson.message[i].id+"' data-idtemp='3' class=\"3 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'setengah hari', 'add')\">STGH HARI</button>" +
@@ -51,6 +52,7 @@ function _loadData() {
                             "<td>"+responseJson.message[i].first_name+" "+responseJson.message[i].last_name+"</td>" +
                             "<td>"+responseJson.message[i].status+"</td>" +
                             "<td>" +
+                            "<button id='"+responseJson.message[i].id+"' data-idtemp='9' class=\"5 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'sakit', '"+responseJson.message[i].attendance_id+"')\">SAKIT</button>" +
                             "<button id='"+responseJson.message[i].id+"' data-idtemp='5' class=\"1 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'ijin', '"+responseJson.message[i].attendance_id+"')\">IJIN</button>" +
                             "<button id='"+responseJson.message[i].id+"' data-idtemp='6' class=\"2 btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'tidak masuk', '"+responseJson.message[i].attendance_id+"')\">TDK MASUK</button>" +
                             "<button id='"+responseJson.message[i].id+"' data-idtemp='7' class=\"3 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'setengah hari', '"+responseJson.message[i].attendance_id+"')\">STGH HARI</button>" +
@@ -65,6 +67,7 @@ function _loadData() {
                             "<td>"+responseJson.message[i].first_name+" "+responseJson.message[i].last_name+"</td>" +
                             "<td>"+responseJson.message[i].status+"</td>" +
                             "<td>" +
+                            "<button id='"+responseJson.message[i].id+"' class=\"5 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'sakit', '"+responseJson.message[i].attendance_id+"')\">SAKIT</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"1 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'ijin', '"+responseJson.message[i].attendance_id+"')\">IJIN</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"2 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'tidak masuk', '"+responseJson.message[i].attendance_id+"')\">TDK MASUK</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"3 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'setengah hari', '"+responseJson.message[i].attendance_id+"')\">STGH HARI</button>" +
@@ -79,6 +82,7 @@ function _loadData() {
                             "<td>"+responseJson.message[i].first_name+" "+responseJson.message[i].last_name+"</td>" +
                             "<td>"+responseJson.message[i].status+"</td>" +
                             "<td>" +
+                            "<button id='"+responseJson.message[i].id+"' class=\"5 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'sakit', '"+responseJson.message[i].attendance_id+"')\">SAKIT</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"1 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'ijin', '"+responseJson.message[i].attendance_id+"')\">IJIN</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"2 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'tidak masuk', '"+responseJson.message[i].attendance_id+"')\">TDK MASUK</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"3 btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'setengah hari', '"+responseJson.message[i].attendance_id+"')\">STGH HARI</button>" +
@@ -93,6 +97,7 @@ function _loadData() {
                             "<td>"+responseJson.message[i].first_name+" "+responseJson.message[i].last_name+"</td>" +
                             "<td>"+responseJson.message[i].status+"</td>" +
                             "<td>" +
+                            "<button id='"+responseJson.message[i].id+"' class=\"5 btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'sakit', '"+responseJson.message[i].attendance_id+"')\">SAKIT</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"1 btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'ijin', '"+responseJson.message[i].attendance_id+"')\">IJIN</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"2 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'tidak masuk', '"+responseJson.message[i].attendance_id+"')\">TDK MASUK</button>" +
                             "<button id='"+responseJson.message[i].id+"' class=\"3 btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right\" onclick=\"_setAttendance(this, 'setengah hari', '"+responseJson.message[i].attendance_id+"')\">STGH HARI</button>" +
@@ -123,6 +128,7 @@ function _setFilter() {
 }
 
 function _setAttendance(element, status, _api) {
+    $('.btn.float-right').addClass('display-none');
     var id = element.id;
     var _classes = element.className.split(' ');
 
@@ -162,6 +168,7 @@ function _setAttendance(element, status, _api) {
             // console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
+                $('.btn.float-right').removeClass('display-none');
             }
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
@@ -180,6 +187,7 @@ function _setAttendance(element, status, _api) {
                 $('#'+id + '.'+_classes[0]).removeClass('color-black2');
                 $('#'+id + '.'+_classes[0]).addClass('button-green');
                 $('#'+id + '.'+_classes[0]).addClass('color-white3');
+                $('.btn.float-right').removeClass('display-none');
             }
         })
         .catch((error) => {

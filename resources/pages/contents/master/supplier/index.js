@@ -1,5 +1,6 @@
 $(document).ready(function () {
     _loadData();
+    _calcTableHeight();
 });
 
 function _loadData() {
@@ -24,6 +25,7 @@ function _loadData() {
         .then((response) => response.json())
         .then((responseJson) => {
             // console.log(responseJson);
+            $("#table-body").html("");
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
@@ -34,9 +36,46 @@ function _loadData() {
                         "<tr>" +
                         "<td>"+responseJson.message[i].name+"</td>" +
                         "<td id='contents-master-supplier-info-"+responseJson.message[i].id+"' onclick=\"_setActiveSidebar(this)\" class=\"text-center width width-80 color-green1 cursor-pointer\">Info</td>" +
+                        "<td id='"+responseJson.message[i].id+"' onclick=\"_deleteData(this)\" class=\"text-center width width-80 color-red1 cursor-pointer\">Delete</td>" +
                         "</tr>"
                     )
                 }
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}
+
+function _deleteData(element) {
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'delete_data';
+
+    const data = {
+        table: "supplier",
+        id: element.id
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                alert(responseJson.message);
+                _loadData();
             }
         })
         .catch((error) => {

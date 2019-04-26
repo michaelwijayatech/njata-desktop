@@ -1,8 +1,9 @@
 $(document).ready(function () {
-    _loadContactData();
+    _loadData();
+    _calcTableHeight();
 });
 
-function _loadContactData() {
+function _loadData() {
     const global_var = remote.getGlobal('globalVariable');
 
     const api = global_var.local_api_ip;
@@ -24,6 +25,7 @@ function _loadContactData() {
         .then((response) => response.json())
         .then((responseJson) => {
             // console.log(responseJson);
+            $("#table-body").html("");
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
@@ -35,9 +37,46 @@ function _loadContactData() {
                         "<td>"+responseJson.message[i].date+"</td>" +
                         "<td>"+responseJson.message[i].description+"</td>" +
                         "<td id='contents-master-holiday-info-"+responseJson.message[i].id+"' onclick=\"_setActiveSidebar(this)\" class=\"text-center width width-80 color-green1 cursor-pointer\">Info</td>" +
+                        "<td id='"+responseJson.message[i].id+"' onclick=\"_destroyData(this)\" class=\"text-center width width-80 color-red1 cursor-pointer\">Destroy</td>" +
                         "</tr>"
                     )
                 }
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}
+
+function _destroyData(element) {
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'destroy_data';
+
+    const data = {
+        table: "holiday",
+        id: element.id
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                alert(responseJson.message);
+                _loadData();
             }
         })
         .catch((error) => {

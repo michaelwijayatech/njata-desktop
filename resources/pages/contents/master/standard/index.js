@@ -1,5 +1,6 @@
 $(document).ready(function () {
     _loadContactData();
+    _calcTableHeight();
 });
 
 function _loadContactData() {
