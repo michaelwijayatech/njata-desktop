@@ -1,7 +1,9 @@
-var fs = require('fs');
-var request = require('request');
-
 $(document).ready(function () {
+    //ADD BEFORE THIS FUNCTION
+    // var fs = require('fs');
+    // var request = require('request');
+    //
+
     _loadEmployeeData();
 
     _calcTableHeight();
@@ -32,6 +34,7 @@ function _loadEmployeeData() {
             }
 
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                // document.getElementById('image-ktp').style.backgroundImage = "url("+ global_var.local_api_images + responseJson.message.image_ktp+")";
                 $('#image-ktp').attr('src', global_var.local_api_images + responseJson.message.image_ktp);
                 $('#image-kk').attr('src', global_var.local_api_images + responseJson.message.image_kk);
                 $('#image-bpjs-ketenagakerjaan').attr('src', global_var.local_api_images + responseJson.message.image_bpjs_ketenagakerjaan);

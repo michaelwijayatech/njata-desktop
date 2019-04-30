@@ -1,7 +1,9 @@
-var fs = require('fs');
-var request = require('request');
-
 $(document).ready(function () {
+    //ADD BEFORE THIS FUNCTION
+    // var fs = require('fs');
+    // var request = require('request');
+    //
+
     _calcTableHeight();
 });
 

@@ -1,7 +1,9 @@
-var fs = require('fs');
-var request = require('request');
-
 $(function () {
+    //ADD BEFORE THIS FUNCTION
+    // var fs = require('fs');
+    // var request = require('request');
+    //
+
     $('#input_dob').datetimepicker({
         format: 'd-m-Y',
         timepicker:false,
@@ -44,7 +46,7 @@ function _loadCompanyData(){
     })
         .then((response) => response.json())
         .then((responseJson) => {
-            // console.log(responseJson);
+            console.log(responseJson);
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
             }
