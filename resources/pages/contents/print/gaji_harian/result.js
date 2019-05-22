@@ -34,7 +34,7 @@ function _loadData() {
     const url = api + 'load_data';
 
     const data = {
-        table: "new_gaji_harian",
+        table: "gaji_harian",
         id: "all",
         start_date: global_var.start_date,
         end_date: global_var.end_date,

@@ -54,6 +54,8 @@ function _loadData() {
                         status = "Ijin";
                     } else if (responseJson.message[i].status === '4') {
                         status = "Cuti";
+                    } else if (responseJson.message[i].status === '5') {
+                        status = "Sakit";
                     }
                     $("#table-body").append(
                         "<tr>" +

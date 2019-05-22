@@ -3,6 +3,11 @@ var products_name = [];
 var products_price = [];
 
 $(document).ready(function () {
+    $('#sales_date').datetimepicker({
+        format: 'd-m-Y',
+        timepicker:false,
+    });
+
     _loadData();
 
     _loadProduct();
@@ -132,6 +137,7 @@ function _save_header() {
         table: "sales",
         id_distributor: $('#distributor_id').val(),
         nota_number: $('#nota_number').val(),
+        date: $('#sales_date').val(),
         total: $('#total_price').val(),
     };
 

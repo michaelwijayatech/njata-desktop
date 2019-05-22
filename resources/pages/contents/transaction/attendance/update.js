@@ -106,7 +106,8 @@ function _searchAttendance() {
                     "<button id='new_masuk' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', 'add')\">MASUK</button>" +
                     "<button id='new_setengah_hari' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', 'add')\">STGH HARI</button>" +
                     "<button id='new_tidak_masuk' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', 'add')\">TDK MASUK</button>" +
-                    "<button id='new_ijin' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', 'add')\">IJIN</button>"
+                    "<button id='new_ijin' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', 'add')\">IJIN</button>" +
+                    "<button id='new_sakit' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'sakit', 'add')\">SAKIT</button>"
                 )
             } else {
                 if (responseJson.message.status === "1") {
@@ -114,28 +115,40 @@ function _searchAttendance() {
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
-                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'sakit', '" + responseJson.message.id + "')\">SAKIT</button>"
                     )
                 } else if (responseJson.message.status === "2") {
                     $("#attendance_button").append(
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
-                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'sakit', '" + responseJson.message.id + "')\">SAKIT</button>"
                     )
                 } else if (responseJson.message.status === "3") {
                     $("#attendance_button").append(
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
-                        "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'sakit', '" + responseJson.message.id + "')\">SAKIT</button>"
+                    )
+                } else if (responseJson.message.status === "5") {
+                    $("#attendance_button").append(
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'sakit', '" + responseJson.message.id + "')\">SAKIT</button>"
                     )
                 } else if (responseJson.message.status === "0") {
                     $("#attendance_button").append(
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'masuk', '" + responseJson.message.id + "')\">MASUK</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'setengah hari', '" + responseJson.message.id + "')\">STGH HARI</button>" +
                         "<button id='" + responseJson.message.id + "' class=\"btn button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'tidak masuk', '" + responseJson.message.id + "')\">TDK MASUK</button>" +
-                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>"
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'ijin', '" + responseJson.message.id + "')\">IJIN</button>" +
+                        "<button id='" + responseJson.message.id + "' class=\"btn button button-black color-black2 width transition transition-_5 button-hover-black2 button-hover-color-white3\" onclick=\"_setAttendance(this, 'sakit', '" + responseJson.message.id + "')\">SAKIT</button>"
                     )
                 }
             }

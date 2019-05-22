@@ -79,7 +79,7 @@ exports.openWindow = (filename) => {
         minHeight: 600,
         icon: app_icon,
     });
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
 
