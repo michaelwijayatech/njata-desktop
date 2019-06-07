@@ -1,0 +1,54 @@
+<div class="body-content flex-column">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="text-uppercase">Attendance Borongan</h4>
+            <br>
+        </div>
+
+        <div class="col-sm-4">
+            <input class="form-control" id="table-search-input-by-name" type="text" placeholder="Search by name" onkeyup="_filterTableByName()">
+        </div>
+        <div class="col-sm-4">
+            <input class="form-control" id="table-search-input-by-status" type="text" placeholder="Search by status" onkeyup="_filterTableByStatus()">
+        </div>
+        <div class="col-sm-4">
+            <button id="contents-transaction-attendance-update" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_setActiveSidebar(this)">UPDATE</button>
+        </div>
+
+        <div class="col-sm-12 mt-3 scrollable-table">
+            <table id="custom-table" class="table table-bordered">
+                <!--<thead>
+                <tr>
+                    <th colspan="5">Borongan A</th>
+                    <th colspan="1">0</th>
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                    <tr>
+                    <td colspan="5">Asri</td>
+                    <td colspan="1">3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="q" class="5 btn btn-block button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right">SAKIT</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="w" class="5 btn btn-block button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right">W</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="e" class="5 btn btn-block button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right">E</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="r" class="5 btn btn-block button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right">R</button>
+                        </td>
+                        <td colspan="1">
+                            <button id="t" class="5 btn btn-block button button-green color-white3 width transition transition-_5 button-hover-black2 button-hover-color-white3 float-right">T</button>
+                        </td>
+                    </tr>
+                </tbody>-->
+            </table>
+        </div>
+
+        <p id="contents-transaction-attendance-index" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
+    </div>
+</div>

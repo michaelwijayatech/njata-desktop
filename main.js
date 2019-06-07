@@ -16,20 +16,22 @@ const shell = electron.shell;
 let app_icon = nativeImage.createFromPath(path.join(__dirname, 'resources', 'assets', 'Images', 'Logos', 'windows', '256x256.png'));
 // let app_icon = nativeImage.createFromPath(path.join(__dirname, '64x64.png'));
 
+const api_address = 'http://192.168.1.10';
+// const api_address = 'http://wijayatech.com';
+
 global.globalVariable = {
     // local_api_ip = '192.168.1.11/wijayatech/njata/webservice/public/api',
     // local_api_ip: 'http://127.0.0.1/njata-webservice/public/api/',
 
-
     // PAKE
-    // local_api_ip: 'http://192.168.1.2/wijayatech/njata/webservice/public/api/',
-    local_api_ip: 'http://wijayatech.com/project/njata/webservice/public/api/',
+    local_api_ip: api_address + '/wijayatech/njata/webservice/public/api/',
+    // local_api_ip: 'http://wijayatech.com/project/njata/webservice/public/api/',
 
-    // local_api_images: 'http://192.168.1.2/wijayatech/njata/webservice/public/images/employee/',
-    local_api_images: 'http://wijayatech.com/project/njata/webservice/public/images/employee/',
+    local_api_images: api_address + '/wijayatech/njata/webservice/public/images/employee/',
+    // local_api_images: 'http://wijayatech.com/project/njata/webservice/public/images/employee/',
 
-    // local_api_pdf: 'http://192.168.1.2/wijayatech/njata/webservice/public/pdf/',
-    local_api_pdf: 'http://wijayatech.com/project/njata/webservice/public/pdf/',
+    local_api_pdf: api_address + '/wijayatech/njata/webservice/public/pdf/',
+    // local_api_pdf: 'http://wijayatech.com/project/njata/webservice/public/pdf/',
 
     //END PAKE
 
@@ -67,7 +69,7 @@ app.on('ready', () => {
         icon: app_icon,
         // frame: false
     });
-    // win.webContents.openDevTools();
+    win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/index.html`);
 });
 
@@ -79,7 +81,7 @@ exports.openWindow = (filename) => {
         minHeight: 600,
         icon: app_icon,
     });
-    // win.webContents.openDevTools();
+    win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
 

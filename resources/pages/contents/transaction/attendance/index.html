@@ -6,33 +6,34 @@
         </div>
 
         <div class="col-sm-4">
-            <input class="form-control" id="table-search-input-by-name" type="text" placeholder="Search by name" onkeyup="_filterTableByName()">
-        </div>
-        <div class="col-sm-4">
-            <input class="form-control" id="table-search-input-by-status" type="text" placeholder="Search by status" onkeyup="_filterTableByStatus()">
-        </div>
-        <div class="col-sm-4">
-            <button id="contents-transaction-attendance-update" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_setActiveSidebar(this)">UPDATE</button>
-        </div>
-
-        <div class="col-sm-12 mt-3 scrollable-table">
-            <table class="table table-bordered table-striped table-hover">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <!--<th>Att</th>-->
-                    <th class="text-center">Action</th>
-                    <!--<th class="text-center width width-120">Info</th>-->
-                    <!--<th class="text-center width width-80">Info</th>-->
-                </tr>
-                </thead>
-                <tbody id="table-body">
-                <!--TABLE FIELD SHOW HERE-->
-                </tbody>
-            </table>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">Borongan</h5>
+                    <p class="card-text">Manage borongan's attendance here.</p>
+                    <p class="btn background-color-black background-color-rebeccapurple-hover transition transition-_5 button-hover-color-white3 btn-block" id="contents-transaction-attendance-borongan" onclick="_setActiveSidebar(this)">Go</p>
+                </div>
+            </div>
         </div>
 
-        <p id="contents-transaction-attendance-index" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">Harian</h5>
+                    <p class="card-text">Manage harian's attendance here.</p>
+                    <p class="btn background-color-black background-color-rebeccapurple-hover transition transition-_5 button-hover-color-white3 btn-block" id="contents-transaction-attendance-harian" onclick="_setActiveSidebar(this)">Go</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-uppercase">Bulanan</h5>
+                    <p class="card-text">Manage bulanan's attendance here.</p>
+                    <p class="btn background-color-black background-color-rebeccapurple-hover transition transition-_5 button-hover-color-white3 btn-block" id="contents-transaction-attendance-bulanan" onclick="_setActiveSidebar(this)">Go</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
