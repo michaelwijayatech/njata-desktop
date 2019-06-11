@@ -20,6 +20,10 @@ $(document).ready(async function () {
         $('#input_potongan_bpjs').val(_moneySeparator($('#input_potongan_bpjs').val()));
     });
 
+    $('#input_tunjangan').keyup(function () {
+        $('#input_tunjangan').val(_moneySeparator($('#input_tunjangan').val()));
+    });
+
     await _loadCompanyData()
 
     await _loadEmployeeData();
@@ -101,6 +105,9 @@ async function _loadEmployeeData() {
                 if(responseJson.message.potongan_bpjs !== undefined || responseJson.message.potongan_bpjs !== "" || responseJson.message.potongan_bpjs !== null){
                     $('#input_potongan_bpjs').val(responseJson.message.potongan_bpjs);
                 }
+                if(responseJson.message.tunjangan !== undefined || responseJson.message.tunjangan !== "" || responseJson.message.tunjangan !== null){
+                    $('#input_tunjangan').val(responseJson.message.tunjangan);
+                }
                 $('#input_dob').val(responseJson.message.dob);
                 $('#input_start_date').val(responseJson.message.start_date);
                 $('#input-gender-' + responseJson.message.gender).attr('selected', 'selected');
@@ -156,6 +163,7 @@ $('#btn-save').click(function () {
         domicile_address: $('#input_address_domisili').val(),
         premi: $('#input_premi').val(),
         potongan_bpjs: $('#input_potongan_bpjs').val(),
+        tunjangan: $('#input_tunjangan').val(),
         dob: $('#input_dob').val(),
         start_date: $('#input_start_date').val(),
         gender: $('#input_gender').val(),

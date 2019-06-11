@@ -1,0 +1,32 @@
+<div class="body-content flex-column">
+    <div class="row">
+        <div class="col-sm-12">
+            <h4 class="text-uppercase">Upah Libur Satpam</h4>
+            <br>
+        </div>
+
+        <div class="col-sm-4">
+            <input class="form-control" id="table-search-input" type="text" placeholder="Search.." onkeyup="_filterTable()">
+        </div>
+        <div class="col-sm-8">
+            <!--<button id="contents-transaction-haid-add" class="btn button button-black color-black2 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 float-right" onclick="_setActiveSidebar(this)">ADD</button>-->
+        </div>
+
+        <div class="col-sm-12 mt-3 scrollable-table">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th class="text-center width width-120">Action</th>
+                    <!--<th class="text-center width width-80">Info</th>-->
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                <!--TABLE FIELD SHOW HERE-->
+                </tbody>
+            </table>
+        </div>
+
+        <p id="contents-transaction-upah_libur_satpam-info" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
+    </div>
+</div>

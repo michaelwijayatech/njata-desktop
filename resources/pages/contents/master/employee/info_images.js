@@ -1,8 +1,10 @@
+var fs = require('fs');
+var request = require('request');
+
 $(document).ready(function () {
     //ADD BEFORE THIS FUNCTION
     // var fs = require('fs');
     // var request = require('request');
-    //
 
     _loadEmployeeData();
 
@@ -56,6 +58,7 @@ $('#input_image_ktp').change(function () {
     readAndUploadFileKTP(this);
 });
 
+
 function readAndUploadFileKTP(input){
     const global_var = remote.getGlobal('globalVariable');
 
@@ -70,6 +73,7 @@ function readAndUploadFileKTP(input){
                 // alert('URL: ' + body);
                 var response = JSON.parse(body);
                 // alert('Image Name : ' + response.message);
+                console.log(response);
                 global_var.temp_02 = response.message;
             }
         });

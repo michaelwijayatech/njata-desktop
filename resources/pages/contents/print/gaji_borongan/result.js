@@ -73,3 +73,44 @@ function _loadData() {
             alert('Error : ' + error);
         });
 }
+
+function _print() {
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'print_data';
+
+    var start_date = global_var.start_date;
+    var end_date = global_var.end_date;
+
+    const data = {
+        table: "borongan_mingguan",
+        start_date: start_date,
+        end_date: end_date,
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                // _loadData();
+                // console.log(responseJson.message);
+                main.openPDFWindow(responseJson.message);
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}

@@ -22,6 +22,10 @@ $(function () {
         $('#input_potongan_bpjs').val(_moneySeparator($('#input_potongan_bpjs').val()));
     });
 
+    $('#input_tunjangan').keyup(function () {
+        $('#input_tunjangan').val(_moneySeparator($('#input_tunjangan').val()));
+    });
+
     _loadCompanyData();
 });
 
@@ -183,6 +187,7 @@ $('#btn-save').click(function () {
         domicile_address: $('#input_address_domisili').val(),
         premi: $('#input_premi').val(),
         potongan_bpjs: $('#input_potongan_bpjs').val(),
+        tunjangan: $('#input_tunjangan').val(),
         dob: $('#input_dob').val(),
         start_date: $('#input_start_date').val(),
         gender: $('#input_gender').val(),
