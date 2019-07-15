@@ -172,6 +172,7 @@ function _setAttendance(element, status, _api) {
         table: "attendance",
         id_employee: id,
         status: att_status,
+        carton: '0',
         id: _api
     };
     if (callback_api === "add"){
@@ -180,6 +181,7 @@ function _setAttendance(element, status, _api) {
             table: "attendance",
             id_employee: $('#employee_id').val(),
             status: att_status,
+            carton: '0',
             date: $('#attendance_date').val()
         };
     }
