@@ -22,6 +22,7 @@ const api_address = 'http://wijayatech.com/project/njata/webservice/public';
 global.globalVariable = {
     // local_api_ip = '192.168.1.11/wijayatech/njata/webservice/public/api',
     // local_api_ip: 'http://127.0.0.1/njata-webservice/public/api/',
+    // TEST PUSH FROM RUNGKUT PC
 
     // PAKE
     local_api_ip: api_address + '/api/',
