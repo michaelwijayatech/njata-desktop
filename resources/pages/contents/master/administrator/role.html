@@ -5,7 +5,7 @@
             <br>
         </div>
 
-        <div class="col-sm-12">
+        <div class="col-sm-12 scrollable-table">
             <form>
                 <div class="form-row display-none">
                     <div class="col-sm-6">
@@ -87,6 +87,7 @@
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" value="contents-transaction-attendance-borongan" name="role"> Attendance | Borongan </label>
+                    <label><input type="checkbox" value="contents-transaction-attendance-borongan_update" name="role"> Attendance | Borongan Update </label>
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" value="contents-transaction-attendance-bulanan" name="role"> Attendance | Bulanan </label>
@@ -162,14 +163,13 @@
                     <label><input type="checkbox" value="contents-setting-change_password-index" name="role"> Change Password | Index </label>
                     <label><input type="checkbox" value="contents-setting-check_update-index" name="role"> Check Update | Index </label>
                 </div>
-
-                <div class="col-sm-12">
-                    <div class="float-right">
-                        <p id="contents-master-administrator-info" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
-                        <p id="btn-save" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3" onclick="_saveRole()">SAVE</p>
-                    </div>
-                </div>
             </form>
+        </div>
+        <div class="col-sm-12">
+            <div class="float-right">
+                <p id="contents-master-administrator-info" onclick="_setActiveSidebar(this)" class="btn button button-red color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3 display-none">CANCEL</p>
+                <p id="btn-save" class="btn button button-green color-white3 width width-150 transition transition-_5 button-hover-black2 button-hover-color-white3" onclick="_saveRole()">SAVE</p>
+            </div>
         </div>
     </div>
 </div>

@@ -8,11 +8,27 @@ $(document).ready(async function () {
     
     await _loadData();
 
-    $(document).on('blur', '.revisi_gaji_harian', function () {
+    $(document).on('blur', '.revisi_pokok_harian', function () {
         var id_employee = $(this).data('idemployee');
         var totalbefore = $(this).data('totalbefore');
         var revisi = $(this).text();
-        _setRevisiGaji(id_employee, totalbefore, revisi);
+        _setRevisiPokok(id_employee, totalbefore, revisi);
+    });
+
+    $(document).on('blur', '.revisi_premi_harian', function () {
+        var id_employee = $(this).data('idemployee');
+        var totalbefore = $(this).data('totalbefore');
+        var revisi = $(this).text();
+        _setRevisiPremi(id_employee, totalbefore, revisi);
+    });
+
+    $(document).on('blur', '.revisi_gaji_harian', function () {
+        var id_employee = $(this).data('idemployee');
+        var totalbefore = $(this).data('totalbefore');
+        var pokokbefore = $(this).data('pokokbefore');
+        var premibefore = $(this).data('premibefore');
+        var revisi = $(this).text();
+        _setRevisiGaji(id_employee, totalbefore, pokokbefore, premibefore, revisi);
     });
 
 
@@ -88,12 +104,14 @@ function _loadData() {
                         "<th class=\"text-center width width-100 display-none\">M | S | I | T</th>" +
                         "<th class=\"text-center width width-80\">L | R</th>" +
                         $_temp_show +
+                        // "<th class=\"total-revision text-center width width-50\">Rev</th>" +
                         "<th class=\"text-center width\">Pokok</th>" +
+                        // "<th class=\"total-revision text-center width width-50\">Rev</th>" +
                         "<th class=\"text-center width\">Premi</th>" +
                         "<th class=\"text-center width\">Haid</th>" +
                         "<th class=\"text-center width\">Potongan BPJS</th>" +
                         "<th class=\"total-before text-center width\">Total</th>" +
-                        "<th class=\"total-revision text-center width width-50\">Revisi</th>" +
+                        "<th class=\"total-revision text-center width width-50\">Rev</th>" +
                         "<th class=\"total-after text-center width\">Total</th>" +
                         "<th class=\"name-helper display-none\">Name</th>"
                     );
@@ -136,12 +154,14 @@ function _loadData() {
                         "<td class='text-center display-none'>"+responseJson.message[i].msit+"</td>" +
                         "<td class='text-center'>"+responseJson.message[i].libur+ " | " +responseJson.message[i].rajang+ "</td>" +
                         $_temp_att_status_show +
-                        "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].pokok)+"</td>" +
-                        "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].premi)+"</td>" +
+                        // "<td contenteditable='true' class='pokok-revision revisi_pokok_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].pokok+"'>"+'0'+"</td>" +
+                        "<td class='pokok_after text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].pokok)+"</td>" +
+                        // "<td contenteditable='true' class='premi-revision revisi_premi_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].premi+"'>"+'0'+"</td>" +
+                        "<td class='premi_after text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].premi)+"</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].haid)+"</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].potongan_bpjs)+"</td>" +
-                        "<td class='total-before text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
-                        "<td contenteditable='true' class='total-revision revisi_gaji_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].total+"'>"+'0'+"</td>" +
+                        "<td class='total-before text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
+                        "<td contenteditable='true' class='total-revision revisi_gaji_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].total+"' data-pokokbefore='"+responseJson.message[i].pokok+"' data-premibefore='"+responseJson.message[i].premi+"'>"+'0'+"</td>" +
                         "<td class='total_after text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
                         "<td class='name-helper display-none'>"+responseJson.message[i].employee_name+"</td>" +
                         "</tr>"
@@ -154,17 +174,106 @@ function _loadData() {
         });
 }
 
-function _setRevisiGaji(id_employee, totalbefore, revisi) {
+function _setRevisiGaji(id_employee, totalbefore, pokokbefore, premibefore, revisi) {
+    var res = String(revisi.substring(0, 1));
+    if (res === 'a' || res === 'A'){
+        if (parseInt(revisi.substring(1)) < 0){
+            var pengurang = revisi.substring(2);
+            var totalafter = parseInt(totalbefore) - parseInt(pengurang);
+            var pokok_totalafter =  parseInt(pokokbefore) - parseInt(pengurang);
+            $('.pokok_after#'+id_employee).text(_moneySeparatorNoKeyCode(pokok_totalafter));
+            $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        } else {
+            var totalafter = parseInt(totalbefore) + parseInt(revisi.substring(1));
+            var pokok_totalafter =  parseInt(pokokbefore) + parseInt(revisi.substring(1));
+            $('.pokok_after#'+id_employee).text(_moneySeparatorNoKeyCode(pokok_totalafter));
+            $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        }
+    } else if (res === 'b' || res === 'B'){
+        if (parseInt(revisi.substring(1)) < 0){
+            var pengurang = revisi.substring(2);
+            var totalafter = parseInt(totalbefore) - parseInt(pengurang);
+            var premi_totalafter =  parseInt(premibefore) - parseInt(pengurang);
+            $('.premi_after#'+id_employee).text(_moneySeparatorNoKeyCode(premi_totalafter));
+            $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        } else {
+            var totalafter = parseInt(totalbefore) + parseInt(revisi.substring(1));
+            var premi_totalafter =  parseInt(premibefore) + parseInt(revisi.substring(1));
+            $('.premi_after#'+id_employee).text(_moneySeparatorNoKeyCode(premi_totalafter));
+            $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        }
+    } else if (res === '0'){
+        var pokok_totalafter =  parseInt(pokokbefore) + parseInt(0);
+        var premi_totalafter =  parseInt(premibefore) + parseInt(0);
+        var totalafter = parseInt(totalbefore) + parseInt(0);
+        $('.pokok_after#'+id_employee).text(_moneySeparatorNoKeyCode(pokok_totalafter));
+        $('.premi_after#'+id_employee).text(_moneySeparatorNoKeyCode(premi_totalafter));
+        $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+    } else {
+        if (parseInt(revisi) < 0){
+            var pengurang = revisi.substring(1);
+            var totalafter = parseInt(totalbefore) - parseInt(pengurang);
+            $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+            // alert("minus : " + totalafter);
+        } else {
+            var totalafter = parseInt(totalbefore) + parseInt(revisi);
+            $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+            // alert("plus : " + totalafter);
+        }
+    }
+    // _calcRevisiFinal(id_employee);
+}
+
+function _setRevisiPokok(id_employee, totalbefore, revisi) {
+    var after = parseInt(0);
+    var totalafter = parseInt(0);
+
     if (parseInt(revisi) < 0){
         var pengurang = revisi.substring(1);
-        var totalafter = parseInt(totalbefore) - parseInt(pengurang);
+        after = parseInt(totalbefore) - parseInt(pengurang);
+        totalafter = parseInt(_removeMoneySeparator($('.total_after#'+id_employee).text())) - parseInt(after);
+        $('.pokok_after#'+id_employee).text(_moneySeparatorNoKeyCode(after));
         $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
         // alert("minus : " + totalafter);
     } else {
-        var totalafter = parseInt(totalbefore) + parseInt(revisi);
+        after = parseInt(totalbefore) + parseInt(revisi);
+        totalafter = parseInt(_removeMoneySeparator($('.total_after#'+id_employee).text())) + parseInt(after);
+        $('.pokok_after#'+id_employee).text(_moneySeparatorNoKeyCode(after));
         $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
         // alert("plus : " + totalafter);
     }
+    console.log(after + ' || ' + totalafter);
+    // _calcRevisiFinal(revisi, id_employee);
+}
+
+function _setRevisiPremi(id_employee, totalbefore, revisi) {
+    if (parseInt(revisi) < 0){
+        var pengurang = revisi.substring(1);
+        var totalafter = parseInt(totalbefore) - parseInt(pengurang);
+        $('.premi_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        // alert("minus : " + totalafter);
+    } else {
+        var totalafter = parseInt(totalbefore) + parseInt(revisi);
+        $('.premi_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        // alert("plus : " + totalafter);
+    }
+    _calcRevisiFinal(revisi, id_employee);
+}
+
+function _calcRevisiFinal(revisi, id_employee) {    
+    // var pokok = parseInt(_removeMoneySeparator($('.pokok_after#'+id_employee).text()));
+    // var premi = parseInt(_removeMoneySeparator($('.premi_after#'+id_employee).text()));
+    var totalafter = parseInt(0);
+    var total_before =  parseInt(_removeMoneySeparator($('.total_after#'+id_employee).text()));
+    if (parseInt(revisi) < 0){
+        var pengurang = revisi.substring(1);
+        totalafter = total_before - parseInt(pengurang);
+    } else {
+        totalafter = total_before + parseInt(revisi);
+        // alert("plus : " + totalafter);
+    }
+    console.log(parseInt(revisi) + ' || ' + total_before + ' || ' + parseInt(totalafter))
+    $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
 }
 
 function _saveGaji(element) {

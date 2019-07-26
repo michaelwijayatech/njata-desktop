@@ -65,9 +65,12 @@ app.on('ready', () => {
         minWidth: 800, 
         minHeight: 600,
         icon: app_icon,
-        // frame: false
+        // frame: false,
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
-    // win.webContents.openDevTools();
+    win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/index.html`);
 });
 
@@ -78,8 +81,11 @@ exports.openWindow = (filename) => {
         minWidth: 800,
         minHeight: 600,
         icon: app_icon,
+        webPreferences: {
+            nodeIntegration: true
+        }
     });
-    // win.webContents.openDevTools();
+    win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
 

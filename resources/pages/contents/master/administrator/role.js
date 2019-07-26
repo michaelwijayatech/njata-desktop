@@ -3,6 +3,7 @@ $(document).ready(async function () {
     $('#input_id').val(global_var.temp_01);
 
     _loadData();
+    _calcTableHeight(120);
 });
 
 function _loadData() {
