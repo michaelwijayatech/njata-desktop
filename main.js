@@ -70,7 +70,7 @@ app.on('ready', () => {
             nodeIntegration: true
         }
     });
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/index.html`);
 });
 
@@ -85,7 +85,7 @@ exports.openWindow = (filename) => {
             nodeIntegration: true
         }
     });
-    win.webContents.openDevTools();
+    // win.webContents.openDevTools();
     win.loadURL(`file://${__dirname}/` + filename + `.html`);
 };
 

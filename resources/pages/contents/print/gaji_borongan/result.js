@@ -1,7 +1,14 @@
 $(document).ready(async function () {
     await _loadGlobalVariable();
-    
+
     await _loadData();
+
+    $(document).on('blur', '.revisi_gaji_bulanan', function () {
+        var id_employee = $(this).data('idemployee');
+        var totalbefore = $(this).data('totalbefore');
+        var revisi = $(this).text();
+        _setRevisiGaji(id_employee, totalbefore, revisi);
+    });
 });
 
 function _loadGlobalVariable() {
@@ -63,15 +70,53 @@ function _loadData() {
                         "<td>"+responseJson.message[i].ijin+" | "+name_ijin+"</td>" +
                         "<td>"+responseJson.message[i].sakit+" | "+name_sakit+"</td>" +
                         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].potongan_bpjs)+"</td>" +
-                        "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
+                        "<td contenteditable='true' class='total-revision revisi_gaji_bulanan text-center' data-idemployee='"+responseJson.message[i].id_group+"' data-totalbefore='"+responseJson.message[i].total+"'>"+'0'+"</td>" +
+                        "<td class='total_after text-right' id='"+responseJson.message[i].id_group+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
                         "</tr>"
                     )
                 }
+                $("#table-body").append(
+                    "<tr>" +
+                    "<td colspan='7' class='text-right'>"+"Total"+"</td>" +
+                    "<td id='total_final' class='text-right'>"+"000"+"</td>" +
+                    "</tr>"
+                );
+                _calcFinalTotal();
             }
         })
         .catch((error) => {
             alert('Error : ' + error);
         });
+}
+
+function _setRevisiGaji(id_employee, totalbefore, revisi) {
+    if (parseInt(revisi) < 0){
+        var pengurang = revisi.substring(1);
+        var totalafter = parseInt(totalbefore) - parseInt(pengurang);
+        $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        // alert("minus : " + totalafter);
+    } else {
+        var totalafter = parseInt(totalbefore) + parseInt(revisi);
+        $('.total_after#'+id_employee).text(_moneySeparatorNoKeyCode(totalafter));
+        // alert("plus : " + totalafter);
+    }
+    _calcFinalTotal();
+}
+
+function _calcFinalTotal(){
+    var final = 0;
+    var table, tr, i;
+    table = document.getElementById("table-body");
+    tr = table.getElementsByTagName("tr");
+    td = tr[0].getElementsByTagName("td");
+    td_length = td.length - 1;
+    for (i = 0; i < tr.length-1; i++) {
+        var subtotal = tr[i].getElementsByTagName("td")[7].textContent || tr[i].getElementsByTagName("td")[7].innerText;
+        var _subtotal = parseInt(_removeMoneySeparator(subtotal));
+        final += _subtotal;
+    }
+    $('#total_final').text(_moneySeparatorNoKeyCode(final));
+    // console.log(_moneySeparatorNoKeyCode(final));
 }
 
 function _print() {
