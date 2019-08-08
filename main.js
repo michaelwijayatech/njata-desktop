@@ -30,6 +30,7 @@ global.globalVariable = {
     local_api_images: api_address + '/images/employee/',
 
     local_api_pdf: api_address + '/pdf/',
+    local_api_pdftemp: api_address + '/pdftemp/',
 
     //END PAKE
 
@@ -99,6 +100,18 @@ exports.openPDFWindow = (filename) => {
     });
     // win.webContents.openDevTools();
     win.loadURL(globalVariable.local_api_pdf + filename);
+};
+
+exports.openPDFWindowTemp = (filename) => {
+    let win = new PDFWindow({
+        width: 1024,
+        height: 728,
+        minWidth: 800,
+        minHeight: 600,
+        icon: app_icon,
+    });
+    // win.webContents.openDevTools();
+    win.loadURL(globalVariable.local_api_pdftemp + filename);
 };
 
 exports.openPopUpWindow = (filename) => {
