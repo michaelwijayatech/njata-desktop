@@ -10,6 +10,44 @@ $(document).ready(function () {
     _calcTableHeight();
 });
 
+function updateEmployeeImageData(field_name, image_name){
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'update_data';
+
+    const data = {
+        table: "employee_image_data",
+        id: global_var.temp_01,
+        field: field_name,
+        name: image_name,
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+            //
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                alert(responseJson.message);
+                // $('#contents-master-product-index').click();
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}
+
 //region KTP
 $('#btn-file-ktp').click(function () {
     $('#input_image_ktp').click();
@@ -35,6 +73,7 @@ function readAndUploadFileKTP(input){
                 var response = JSON.parse(body);
                 // alert('Image Name : ' + response.message);
                 global_var.temp_02 = response.message;
+                updateEmployeeImageData("ktp", response.message);
             }
         });
         var form = req.form();
@@ -72,6 +111,7 @@ function readAndUploadFileKK(input){
                 var response = JSON.parse(body);
                 // alert('Image Name : ' + response.message);
                 global_var.temp_03 = response.message;
+                updateEmployeeImageData("kk", response.message);
             }
         });
         var form = req.form();
@@ -109,6 +149,7 @@ function readAndUploadFileBPJSKetenagakerjaan(input){
                 var response = JSON.parse(body);
                 // alert('Image Name : ' + response.message);
                 global_var.temp_04 = response.message;
+                updateEmployeeImageData("bpjs_ketenagakerjaan", response.message);
             }
         });
         var form = req.form();
@@ -146,6 +187,7 @@ function readAndUploadFileBPJSKesehatan(input){
                 var response = JSON.parse(body);
                 // alert('Image Name : ' + response.message);
                 global_var.temp_05 = response.message;
+                updateEmployeeImageData("bpjs_kesehatan", response.message);
             }
         });
         var form = req.form();
