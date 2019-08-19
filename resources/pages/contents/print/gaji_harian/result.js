@@ -146,6 +146,7 @@ function _loadData() {
                     /**
                      * ADD DATA TO TABLE
                      */
+
                     $("#table-body").append(
                         "<tr>" +
                         "<td class='display-none'>"+responseJson.message[i].id_employee+"</td>" +
@@ -166,6 +167,33 @@ function _loadData() {
                         "<td class='name-helper display-none'>"+responseJson.message[i].employee_name+"</td>" +
                         "</tr>"
                     )
+
+                    // if(responseJson.message[i].employee_status === 1){
+                        
+                    // } else {
+                    //     $("#table-body").append(
+                    //         "<tr>" +
+                    //         "<td class='display-none'>"+responseJson.message[i].id_employee+"</td>" +
+                    //         "<td>"+responseJson.message[i].employee_name+"</td>" +
+                    //         "<td class='display-none'>"+$gender+"</td>" +
+                    //         "<td class='text-center display-none'>"+responseJson.message[i].msit+"</td>" +
+                    //         "<td class='text-center'>"+responseJson.message[i].libur+ " | " +responseJson.message[i].rajang+ "</td>" +
+                    //         $_temp_att_status_show +
+                    //         // "<td contenteditable='true' class='pokok-revision revisi_pokok_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].pokok+"'>"+'0'+"</td>" +
+                    //         "<td class='pokok_after text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].pokok)+"</td>" +
+                    //         // "<td contenteditable='true' class='premi-revision revisi_premi_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].premi+"'>"+'0'+"</td>" +
+                    //         "<td class='premi_after text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total_premi_rajang)+"</td>" +
+                    //         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].haid)+"</td>" +
+                    //         "<td class='text-right'>"+_moneySeparatorNoKeyCode(responseJson.message[i].potongan_bpjs)+"</td>" +
+                    //         "<td class='total-before text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
+                    //         "<td contenteditable='true' class='total-revision revisi_gaji_harian text-center' data-idemployee='"+responseJson.message[i].id_employee+"' data-totalbefore='"+responseJson.message[i].total+"' data-pokokbefore='"+responseJson.message[i].pokok+"' data-premibefore='"+responseJson.message[i].premi+"'>"+'0'+"</td>" +
+                    //         "<td class='total_after text-right' id='"+responseJson.message[i].id_employee+"'>"+_moneySeparatorNoKeyCode(responseJson.message[i].total)+"</td>" +
+                    //         "<td class='name-helper display-none'>"+responseJson.message[i].employee_name+"</td>" +
+                    //         "</tr>"
+                    //     )
+                    // }
+
+                    
                 }
             }
         })

@@ -64,42 +64,47 @@ function _filterTable() {
 }
 
 function _employeeResign(element) {
-    var today = new Date();
-    var date = _addZeroOnFirstNumber(today.getDate());
-    var month = _addZeroOnFirstNumber(today.getMonth()+1);
-    var year = today.getFullYear();
+    if (confirm("Are you sure?")) {
+        var today = new Date();
+        var date = _addZeroOnFirstNumber(today.getDate());
+        var month = _addZeroOnFirstNumber(today.getMonth()+1);
+        var year = today.getFullYear();
 
-    let date_now = date + "-" + month + "-" + year;
+        let date_now = date + "-" + month + "-" + year;
 
-    const global_var = remote.getGlobal('globalVariable');
+        const global_var = remote.getGlobal('globalVariable');
 
-    const api = global_var.local_api_ip;
-    const url = api + 'employee_resign';
+        const api = global_var.local_api_ip;
+        const url = api + 'employee_resign';
 
-    const data = {
-        employee_id: element.id,
-        end_date: date_now
-    };
+        const data = {
+            employee_id: element.id,
+            end_date: date_now
+        };
 
-    fetch(url, {
-        method: "POST",
-        headers: {
-            "Accept": "application/json",
-            "Content": "application/json",
-        },
-        body: JSON.stringify(data)
-    })
-        .then((response) => response.json())
-        .then((responseJson) => {
-            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
-                alert(responseJson.message);
-            }
-
-            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
-                $('#contents-master-employee-index').click();
-            }
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content": "application/json",
+            },
+            body: JSON.stringify(data)
         })
-        .catch((error) => {
-            alert('Error : ' + error);
-        });
+            .then((response) => response.json())
+            .then((responseJson) => {
+                if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                    alert(responseJson.message);
+                }
+
+                if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                    alert(responseJson.message);
+                    $('#contents-master-employee-index').click();
+                }
+            })
+            .catch((error) => {
+                alert('Error : ' + error);
+            });
+    } else {
+        alert("Delete Cancelled");
+    }
 }

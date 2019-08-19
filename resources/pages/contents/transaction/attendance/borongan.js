@@ -297,8 +297,7 @@ function _setAttendance(element, status, _api) {
                  */
                 // $('#contents-transaction-attendance-index').click();
 
-                /**
-                 *
+                
                  var button_id = ['1', '2', '3', '4'];
                  for (var i = 0; i<button_id.length; i++){
                     _removeGreenButton(id, button_id[i]);
@@ -310,9 +309,9 @@ function _setAttendance(element, status, _api) {
                  $('#'+id + '.'+_classes[0]).addClass('color-white3');
                  $('.btn.float-right').removeClass('display-none');
 
-                 */
+                
 
-                _loadData();
+                // _loadData();
             }
         })
         .catch((error) => {

@@ -50,39 +50,43 @@ function _loadContactData() {
 }
 
 function _deleteData(element) {
-    const global_var = remote.getGlobal('globalVariable');
-
-    const api = global_var.local_api_ip;
-    const url = api + 'delete_data';
-
-    const data = {
-        table: "contact",
-        id: element.id
-    };
-
-    fetch(url, {
-        method: "POST",
-        headers: {
-            "Accept": "application/json",
-            "Content": "application/json",
-        },
-        body: JSON.stringify(data)
-    })
-        .then((response) => response.json())
-        .then((responseJson) => {
-            // console.log(responseJson);
-            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
-                alert(responseJson.message);
-            }
-
-            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
-                alert(responseJson.message);
-                _loadContactData();
-            }
+    if (confirm("Are you sure?")) {
+        const global_var = remote.getGlobal('globalVariable');
+    
+        const api = global_var.local_api_ip;
+        const url = api + 'delete_data';
+    
+        const data = {
+            table: "contact",
+            id: element.id
+        };
+    
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content": "application/json",
+            },
+            body: JSON.stringify(data)
         })
-        .catch((error) => {
-            alert('Error : ' + error);
-        });
+            .then((response) => response.json())
+            .then((responseJson) => {
+                // console.log(responseJson);
+                if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                    alert(responseJson.message);
+                }
+    
+                if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                    alert(responseJson.message);
+                    _loadContactData();
+                }
+            })
+            .catch((error) => {
+                alert('Error : ' + error);
+            });
+    } else {
+        alert("Delete Cancelled");
+    }
 }
 
 function _filterTable() {

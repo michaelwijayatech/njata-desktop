@@ -183,7 +183,7 @@ function _setAttendance(element, status, _api) {
         .then((response) => response.json())
         .then((responseJson) => {
             // console.log(responseJson);
-            $("#table-body").html("");
+            // $("#table-body").html("");
             if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
                 alert(responseJson.message);
                 /**
@@ -194,7 +194,7 @@ function _setAttendance(element, status, _api) {
             }
             //
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
-                //     alert(responseJson.message);
+                    // alert(responseJson.message);
                 /**
                  * if($('#table-search-input-by-status').val() !== ""){
                     global_var.filter = $('#table-search-input-by-status').val();
@@ -202,10 +202,8 @@ function _setAttendance(element, status, _api) {
                  */
                 // $('#contents-transaction-attendance-index').click();
 
-                /**
-                 *
-                 var button_id = ['1', '2', '3', '4'];
-                 for (var i = 0; i<button_id.length; i++){
+                var button_id = ['1', '2', '3', '4'];
+                for (var i = 0; i<button_id.length; i++){
                     _removeGreenButton(id, button_id[i]);
                 }
 
@@ -215,9 +213,7 @@ function _setAttendance(element, status, _api) {
                  $('#'+id + '.'+_classes[0]).addClass('color-white3');
                  $('.btn.float-right').removeClass('display-none');
 
-                 */
-
-                _loadData();
+                // _loadData();
             }
         })
         .catch((error) => {
