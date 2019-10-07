@@ -113,6 +113,10 @@ async function _loadEmployeeData() {
                 $('#input-gender-' + responseJson.message.gender).attr('selected', 'selected');
                 $('#input-status-' + responseJson.message.status).attr('selected', 'selected');
                 $('#input-company-' + responseJson.message.id_company).attr('selected', 'selected');
+                if(responseJson.message.is_active === 2){
+                    $('#_set_cuti').addClass('display-none');
+                    $('#_remove_cuti').removeClass('display-none');
+                }
             }
         })
         .catch((error) => {
@@ -228,6 +232,80 @@ function _employee_resign() {
 
             if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
                 $('#contents-master-employee-index').click();
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}
+
+function _set_employee_cuti() {
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'update_data';
+
+    const data = {
+        table: "employee_cuti",
+        id: global_var.temp_01,
+        status: "set_cuti"
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                $('#_set_cuti').addClass('display-none');
+                $('#_remove_cuti').removeClass('display-none');
+            }
+        })
+        .catch((error) => {
+            alert('Error : ' + error);
+        });
+}
+
+function _remove_employee_cuti() {
+    const global_var = remote.getGlobal('globalVariable');
+
+    const api = global_var.local_api_ip;
+    const url = api + 'update_data';
+
+    const data = {
+        table: "employee_cuti",
+        id: global_var.temp_01,
+        status: "set_active"
+    };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content": "application/json",
+        },
+        body: JSON.stringify(data)
+    })
+        .then((response) => response.json())
+        .then((responseJson) => {
+            // console.log(responseJson);
+            if(responseJson.status.toString() === global_var.STATUS_ERROR.toString()){
+                alert(responseJson.message);
+            }
+
+            if(responseJson.status.toString() === global_var.STATUS_SUCCESS.toString()){
+                $('#_set_cuti').removeClass('display-none');
+                $('#_remove_cuti').addClass('display-none');
             }
         })
         .catch((error) => {

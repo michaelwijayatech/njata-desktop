@@ -50,6 +50,7 @@ function _loadDisplayMenu(element){
         if(page === "logout"){
             _removeTempVariable();
             global_var.user_id = null;
+            global_var.temp_01 = null;
             var window = remote.getCurrentWindow();
             main.openWindow('index');
             window.close();
