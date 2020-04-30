@@ -28,7 +28,7 @@
     "datatables.net-dt": "^1.10.19",
     "electron-pdf-window": "^1.0.12",
     "electron-updater": "^4.0.6",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.7",
     "request": "^2.88.0",
     "sshpk": "^1.15.1"
