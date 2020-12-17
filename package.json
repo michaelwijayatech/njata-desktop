@@ -24,7 +24,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.4.2",
     "bootstrap": "^4.1.3",
-    "datatables.net": "^1.10.19",
+    "datatables.net": "^1.10.22",
     "datatables.net-dt": "^1.10.19",
     "electron-pdf-window": "^1.0.12",
     "electron-updater": "^4.0.6",
